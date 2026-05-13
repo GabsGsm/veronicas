@@ -1,0 +1,199 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../../app/Livewire';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/resources/views/**/*.blade.php';
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* PALETA VERÔNICA'S FASHION - PREMIUM ROSÉ            */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-serif: 'Playfair Display', 'Times New Roman', serif;
+    --font-script: 'Great Vibes', cursive;
+
+    /* Tons rosé */
+    --color-rose-50: #fef8f8;
+    --color-rose-100: #fef0f0;
+    --color-rose-200: #fde4e4;
+    --color-rose-300: #f9caca;
+    --color-rose-400: #f5b0b0;
+    --color-rose-500: #e89b9b;
+    --color-rose-600: #d88787;
+
+    /* Neutros premium */
+    --color-nude: #f5e8e4;
+    --color-off-white: #faf9f7;
+    --color-beige-light: #f2ede9;
+    --color-warm-white: #fffcf9;
+    --color-gold-accent: #d4af37;
+    --color-gold-light: #f4e9d1;
+
+    /* Sistema de design */
+    --color-background: #fffcf9;
+    --color-foreground: #2d2d2d;
+    --color-card: #faf9f7;
+    --color-card-foreground: #2d2d2d;
+    --color-primary: #e89b9b;
+    --color-primary-foreground: #ffffff;
+    --color-secondary: #f5e8e4;
+    --color-secondary-foreground: #2d2d2d;
+    --color-muted: #f2ede9;
+    --color-muted-foreground: #8a8a8a;
+    --color-accent: #fde4e4;
+    --color-accent-foreground: #2d2d2d;
+    --color-destructive: #d4183d;
+    --color-destructive-foreground: #ffffff;
+    --color-border: rgba(232, 155, 155, 0.15);
+    --color-ring: #f9caca;
+
+    /* Sidebar tokens */
+    --color-sidebar: #fef8f8;
+    --color-sidebar-foreground: #2d2d2d;
+    --color-sidebar-accent: #fef0f0;
+    --color-sidebar-accent-foreground: #2d2d2d;
+    --color-sidebar-border: rgba(232, 155, 155, 0.1);
+
+    /* Radius */
+    --radius: 0.75rem;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* BASE                                                 */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop {
+        border-color: var(--color-border);
+    }
+
+    html {
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        font-family: var(--font-sans);
+        font-feature-settings: 'cv11', 'ss01';
+    }
+
+    .font-serif {
+        font-family: var(--font-serif);
+    }
+
+    .font-script {
+        font-family: var(--font-script);
+    }
+
+    .font-sans {
+        font-family: var(--font-sans);
+    }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* UTILITIES CUSTOMIZADAS                              */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@layer utilities {
+    .line-clamp-1 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    .line-clamp-2 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .scrollbar-thin {
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-rose-300) transparent;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        background-color: var(--color-rose-300);
+        border-radius: 9999px;
+    }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* ANIMAÇÕES PREMIUM                                   */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideOutRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+@keyframes carouselFade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.95; }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Loja: shadow especial pra cards premium */
+.shadow-premium {
+    box-shadow:
+        0 1px 2px rgba(232, 155, 155, 0.04),
+        0 4px 12px rgba(45, 45, 45, 0.04);
+}
+
+.shadow-premium-hover {
+    box-shadow:
+        0 4px 8px rgba(232, 155, 155, 0.08),
+        0 12px 28px rgba(45, 45, 45, 0.08);
+}
+
+/* Gradient editorial fashion */
+.bg-editorial-rose {
+    background: linear-gradient(135deg, #fef8f8 0%, #f5e8e4 100%);
+}
+
+.bg-editorial-cream {
+    background: linear-gradient(135deg, #fffcf9 0%, #f2ede9 100%);
+}
