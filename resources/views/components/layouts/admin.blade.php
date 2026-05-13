@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="h-full bg-slate-50">
+<html lang="pt-BR" class="h-full bg-slate-50" style="--color-accent:#be123c;--color-accent-foreground:#fff;--color-accent-content:#9f1239;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

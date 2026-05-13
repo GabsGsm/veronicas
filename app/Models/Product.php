@@ -2,14 +2,16 @@
 
 namespace App\Models;
 
+use Database\Factories\ProductFactory;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Storage;
 
 class Product extends Model
 {
-    /** @use HasFactory<\Database\Factories\ProductFactory> */
+    /** @use HasFactory<ProductFactory> */
     use HasFactory;
 
     protected $fillable = [
@@ -98,11 +100,11 @@ class Product extends Model
         return Attribute::get(function (): array {
             $gallery = $this->gallery ?? [];
 
-            if ($gallery === [] && $this->primary_image !== null) {
-                return [$this->primary_image];
-            }
+            $paths = $gallery === [] && $this->primary_image !== null
+                ? [$this->primary_image]
+                : $gallery;
 
-            return $gallery;
+            return array_map(fn (string $p) => Storage::url($p), $paths);
         });
     }
 

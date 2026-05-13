@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Pages;
 
+use App\Enums\Occasion;
 use App\Livewire\Concerns\ManagesFavorites;
 use App\Models\Product;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -56,7 +57,7 @@ class Catalog extends Component
                 'title' => 'Promoções',
                 'subtitle' => 'Elegância premium com preços irresistíveis',
             ],
-            $this->mode === 'occasion' && $this->occasion === 'Festa' => [
+            $this->mode === 'occasion' && $this->occasion === Occasion::Festa->value => [
                 'decorative' => 'Para momentos especiais',
                 'title' => 'Festa',
                 'subtitle' => 'Brilhe em cada celebração',

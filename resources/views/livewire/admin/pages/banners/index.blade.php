@@ -67,7 +67,20 @@
                                 @endif
                             </td>
                             <td class="px-4 py-3 text-slate-500">{{ $banner->collection?->title ?? '—' }}</td>
-                            <td class="px-4 py-3 text-slate-500">{{ $banner->order }}</td>
+                            <td class="px-4 py-3">
+                                <div class="flex items-center gap-1">
+                                    <button wire:click="moveUp({{ $banner->id }})" class="p-1 text-slate-400 hover:text-slate-700 transition-colors" title="Mover para cima">
+                                        <flux:icon name="chevron-up" class="w-4 h-4" />
+                                    </button>
+                                    <input type="number"
+                                           value="{{ $banner->order }}"
+                                           wire:change="updateOrder({{ $banner->id }}, $event.target.value)"
+                                           class="w-12 text-center text-xs border border-slate-200 rounded px-1 py-1 text-slate-700 focus:outline-none focus:ring-1 focus:ring-rose-300" />
+                                    <button wire:click="moveDown({{ $banner->id }})" class="p-1 text-slate-400 hover:text-slate-700 transition-colors" title="Mover para baixo">
+                                        <flux:icon name="chevron-down" class="w-4 h-4" />
+                                    </button>
+                                </div>
+                            </td>
                             <td class="px-4 py-3">
                                 <flux:badge :variant="$banner->active ? 'success' : 'zinc'" size="sm">
                                     {{ $banner->active ? 'Ativo' : 'Inativo' }}

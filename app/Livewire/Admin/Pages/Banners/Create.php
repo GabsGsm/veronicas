@@ -17,20 +17,32 @@ class Create extends Component
     use WithFileUploads;
 
     public string $title = '';
+
     public string $subtitle = '';
+
     public string $description = '';
+
     public string $cta_label = '';
+
     public ?int $collection_id = null;
+
     public bool $active = true;
+
     public int $order = 0;
+
     public $image = null;
+
+    public function mount(): void
+    {
+        $this->order = (Banner::max('order') ?? -1) + 1;
+    }
 
     public function save(): void
     {
         $this->validate([
-            'title'         => 'required|string|max:255',
+            'title' => 'required|string|max:255',
             'collection_id' => 'nullable|exists:collections,id',
-            'image'         => 'nullable|image|max:2048',
+            'image' => 'nullable|image|max:2048',
         ]);
 
         $imagePath = $this->image
@@ -38,14 +50,14 @@ class Create extends Component
             : null;
 
         Banner::create([
-            'title'         => $this->title,
-            'subtitle'      => $this->subtitle ?: null,
-            'description'   => $this->description ?: null,
-            'cta_label'     => $this->cta_label ?: null,
+            'title' => $this->title,
+            'subtitle' => $this->subtitle ?: null,
+            'description' => $this->description ?: null,
+            'cta_label' => $this->cta_label ?: null,
             'collection_id' => $this->collection_id ?: null,
-            'active'        => $this->active,
-            'order'         => $this->order,
-            'image'         => $imagePath,
+            'active' => $this->active,
+            'order' => $this->order,
+            'image' => $imagePath,
         ]);
 
         $this->dispatch('toast', type: 'success', message: 'Banner criado com sucesso.');

@@ -1149,3 +1149,254 @@ Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" 
     at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
     at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
     at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/vestido-elegance-rose","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-12T22:33:11.139Z"} 
+[2026-05-13 00:53:47] local.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T00:53:45.372Z"} 
+[2026-05-13 01:01:36] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 214 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:01:35.231Z"} 
+[2026-05-13 01:01:36] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:01:35.267Z"} 
+[2026-05-13 01:01:36] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:01:35.267Z"} 
+[2026-05-13 01:16:03] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:16:02.072Z"} 
+[2026-05-13 01:16:03] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:16:02.105Z"} 
+[2026-05-13 01:16:03] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:16:02.105Z"} 
+[2026-05-13 01:27:36] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:27:25.919Z"} 
+[2026-05-13 01:27:36] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:27:27.022Z"} 
+[2026-05-13 01:27:36] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:27:27.023Z"} 
+[2026-05-13 01:29:00] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:28:55.020Z"} 
+[2026-05-13 01:29:00] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:28:55.028Z"} 
+[2026-05-13 01:29:00] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:28:55.028Z"} 
+[2026-05-13 01:36:13] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:36:09.977Z"} 
+[2026-05-13 01:36:13] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:36:10.040Z"} 
+[2026-05-13 01:36:13] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:36:10.041Z"} 
+[2026-05-13 01:36:38] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:36:35.001Z"} 
+[2026-05-13 01:36:38] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:36:35.162Z"} 
+[2026-05-13 01:36:38] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:36:35.162Z"} 
+[2026-05-13 01:37:45] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:37:41.312Z"} 
+[2026-05-13 01:37:45] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:37:41.364Z"} 
+[2026-05-13 01:37:45] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:37:41.365Z"} 
+[2026-05-13 01:38:39] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:38:35.857Z"} 
+[2026-05-13 01:38:39] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:38:35.914Z"} 
+[2026-05-13 01:38:39] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:38:35.915Z"} 
+[2026-05-13 01:39:02] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:38:59.807Z"} 
+[2026-05-13 01:39:02] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:38:59.861Z"} 
+[2026-05-13 01:39:02] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:38:59.880Z"} 
+[2026-05-13 01:53:57] local.WARNING: Alpine Expression Error: $parent is not defined
+
+Expression: "buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')" null null buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') false 222 null null null null  null null  {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:53:51.161Z"} 
+[2026-05-13 01:53:57] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:53:51.212Z"} 
+[2026-05-13 01:53:57] local.ERROR: Uncaught ReferenceError: $parent is not defined http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c 1397 7 ReferenceError $parent is not defined ReferenceError: $parent is not defined
+    at [Alpine] buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '') (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:41)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-3d398ecc/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/produto/teste","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-13T01:53:51.213Z"} 

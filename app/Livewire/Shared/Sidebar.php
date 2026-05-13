@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Shared;
 
+use App\Enums\Occasion;
 use Livewire\Component;
 
 class Sidebar extends Component
@@ -19,7 +20,7 @@ class Sidebar extends Component
         ['label' => 'Vestidos',      'icon' => 'shirt',         'route' => 'catalog.category', 'params' => ['category' => 'vestidos']],
         ['label' => 'Conjuntos',     'icon' => 'package',       'route' => 'catalog.category', 'params' => ['category' => 'conjuntos']],
         ['label' => 'Casual',        'icon' => 'coffee',        'route' => 'catalog.category', 'params' => ['category' => 'casual']],
-        ['label' => 'Festa',         'icon' => 'party-popper',  'route' => 'catalog.occasion', 'params' => ['occasion' => 'Festa']],
+        ['label' => 'Festa',         'icon' => 'party-popper',  'route' => 'catalog.occasion', 'params' => ['occasion' => Occasion::Festa->value]],
         ['label' => 'Acessórios',    'icon' => 'watch',         'route' => 'catalog.category', 'params' => ['category' => 'acessorios']],
         ['label' => 'Promoções',     'icon' => 'tag',           'route' => 'catalog.sale'],
         ['label' => 'Favoritos',     'icon' => 'heart',         'route' => 'favorites'],

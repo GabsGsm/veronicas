@@ -17,15 +17,29 @@ class Create extends Component
     use WithFileUploads;
 
     public string $title = '';
+
     public string $slug = '';
+
     public string $subtitle = '';
+
     public string $description = '';
+
     public string $story = '';
+
     public bool $active = true;
+
     public bool $featured = false;
+
     public int $order = 0;
+
     public $coverImage = null;
+
     public $bannerImage = null;
+
+    public function mount(): void
+    {
+        $this->order = (Collection::max('order') ?? -1) + 1;
+    }
 
     public function updatedTitle(): void
     {
@@ -37,25 +51,25 @@ class Create extends Component
     public function save(): void
     {
         $this->validate([
-            'title'       => 'required|string|max:255',
-            'slug'        => 'required|string|max:255|unique:collections,slug',
-            'coverImage'  => 'nullable|image|max:2048',
+            'title' => 'required|string|max:255',
+            'slug' => 'required|string|max:255|unique:collections,slug',
+            'coverImage' => 'nullable|image|max:2048',
             'bannerImage' => 'nullable|image|max:2048',
         ]);
 
-        $coverPath  = $this->coverImage  ? $this->coverImage->store('collections', 'public')  : null;
+        $coverPath = $this->coverImage ? $this->coverImage->store('collections', 'public') : null;
         $bannerPath = $this->bannerImage ? $this->bannerImage->store('collections', 'public') : null;
 
         Collection::create([
-            'title'        => $this->title,
-            'slug'         => $this->slug,
-            'subtitle'     => $this->subtitle ?: null,
-            'description'  => $this->description ?: null,
-            'story'        => $this->story ?: null,
-            'active'       => $this->active,
-            'featured'     => $this->featured,
-            'order'        => $this->order,
-            'cover_image'  => $coverPath,
+            'title' => $this->title,
+            'slug' => $this->slug,
+            'subtitle' => $this->subtitle ?: null,
+            'description' => $this->description ?: null,
+            'story' => $this->story ?: null,
+            'active' => $this->active,
+            'featured' => $this->featured,
+            'order' => $this->order,
+            'cover_image' => $coverPath,
             'banner_image' => $bannerPath,
         ]);
 

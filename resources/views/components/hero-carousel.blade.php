@@ -15,7 +15,7 @@
         'title' => $b->title,
         'subtitle' => $b->subtitle,
         'description' => $b->description,
-        'image' => $b->image,
+        'image' => $b->image ? \Illuminate\Support\Facades\Storage::url($b->image) : null,
         'cta_label' => $b->cta_label ?? 'Explorar Coleção',
         'href' => $b->collection_id ? route('collection.show', $b->collection->slug) : null,
     ])->values()->all();

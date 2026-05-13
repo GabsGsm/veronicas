@@ -40,6 +40,7 @@
                             </button>
                         </th>
                         <th class="px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide">Status</th>
+                        <th class="px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide">Ordem</th>
                         <th class="px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wide text-right">Ações</th>
                     </tr>
                 </thead>
@@ -77,6 +78,20 @@
                                 <flux:badge :variant="$product->active ? 'success' : 'zinc'" size="sm">
                                     {{ $product->active ? 'Ativo' : 'Inativo' }}
                                 </flux:badge>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div class="flex items-center gap-1">
+                                    <button wire:click="moveUp({{ $product->id }})" class="p-1 text-slate-400 hover:text-slate-700 transition-colors" title="Mover para cima">
+                                        <flux:icon name="chevron-up" class="w-4 h-4" />
+                                    </button>
+                                    <input type="number"
+                                           value="{{ $product->order }}"
+                                           wire:change="updateOrder({{ $product->id }}, $event.target.value)"
+                                           class="w-12 text-center text-xs border border-slate-200 rounded px-1 py-1 text-slate-700 focus:outline-none focus:ring-1 focus:ring-rose-300" />
+                                    <button wire:click="moveDown({{ $product->id }})" class="p-1 text-slate-400 hover:text-slate-700 transition-colors" title="Mover para baixo">
+                                        <flux:icon name="chevron-down" class="w-4 h-4" />
+                                    </button>
+                                </div>
                             </td>
                             <td class="px-4 py-3">
                                 <div class="flex items-center justify-end gap-2">

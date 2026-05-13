@@ -13,6 +13,19 @@ use App\Livewire\Pages\Favorites;
 use App\Livewire\Pages\Home;
 use App\Livewire\Pages\ProductDetail;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
+
+/*
+|--------------------------------------------------------------------------
+| Storage — serve arquivos do disco público sem depender de symlink
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/storage/{path}', function (string $path) {
+    abort_unless(Storage::disk('public')->exists($path), 404);
+
+    return Storage::disk('public')->response($path);
+})->where('path', '.*')->name('storage.serve');
 
 /*
 |--------------------------------------------------------------------------

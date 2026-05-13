@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* Site é exclusivamente light — desativa dark mode por media query */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @source '../views';
 @source '../../app/Livewire';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';

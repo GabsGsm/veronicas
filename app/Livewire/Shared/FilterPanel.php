@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Shared;
 
+use App\Enums\Occasion;
 use Livewire\Attributes\On;
 use Livewire\Component;
 
@@ -24,7 +25,7 @@ class FilterPanel extends Component
     public array $filterOptions = [
         'sizes' => ['PP', 'P', 'M', 'G', 'GG'],
         'colors' => ['Rosé', 'Nude', 'Off-white', 'Bege', 'Branco', 'Champagne', 'Dourado'],
-        'occasions' => ['Casual', 'Festa', 'Trabalho', 'Especial'],
+        'occasions' => [],
         'priceRanges' => [
             ['label' => 'Até R$ 150',         'min' => 0,   'max' => 150],
             ['label' => 'R$ 150 - R$ 300',    'min' => 150, 'max' => 300],
@@ -32,6 +33,11 @@ class FilterPanel extends Component
             ['label' => 'Acima de R$ 450',    'min' => 450, 'max' => 9999],
         ],
     ];
+
+    public function mount(): void
+    {
+        $this->filterOptions['occasions'] = array_column(Occasion::cases(), 'value');
+    }
 
     #[On('open-filters')]
     public function open(): void

@@ -19,30 +19,51 @@ class Create extends Component
     use WithFileUploads;
 
     public string $name = '';
+
     public string $slug = '';
+
     public ?int $category_id = null;
+
     public ?int $collection_id = null;
-    public string $tag = '';
+
+    public ?string $tag = null;
+
     public string $occasion = '';
+
     public bool $active = true;
+
     public bool $featured = false;
+
     public int $order = 0;
 
     public string $price = '';
+
     public string $promotional_price = '';
 
     public string $short_description = '';
+
     public string $description = '';
 
     public string $fabric = '';
+
     public string $fabric_details = '';
+
     public array $sizes = [];
+
     public array $colors = [];
+
     public array $care = [];
+
     public string $newCareItem = '';
 
     public $primaryImage = null;
+
     public array $galleryImages = [];
+
+    public function mount(): void
+    {
+        $this->order = (Product::max('order') ?? -1) + 1;
+    }
 
     public function updatedName(): void
     {
@@ -72,13 +93,13 @@ class Create extends Component
     public function save(): void
     {
         $this->validate([
-            'name'              => 'required|string|max:255',
-            'slug'              => 'required|string|max:255|unique:products,slug',
-            'category_id'       => 'required|exists:categories,id',
-            'price'             => 'required|numeric|min:0',
+            'name' => 'required|string|max:255',
+            'slug' => 'required|string|max:255|unique:products,slug',
+            'category_id' => 'required|exists:categories,id',
+            'price' => 'required|numeric|min:0',
             'promotional_price' => 'nullable|numeric|min:0',
-            'primaryImage'      => 'nullable|image|max:2048',
-            'galleryImages.*'   => 'nullable|image|max:2048',
+            'primaryImage' => 'nullable|image|max:2048',
+            'galleryImages.*' => 'nullable|image|max:2048',
         ]);
 
         $primaryPath = $this->primaryImage
@@ -91,26 +112,26 @@ class Create extends Component
         );
 
         Product::create([
-            'name'                    => $this->name,
-            'slug'                    => $this->slug,
-            'category_id'             => $this->category_id,
-            'collection_id'           => $this->collection_id ?: null,
-            'tag'                     => $this->tag ?: null,
-            'occasion'                => $this->occasion ?: null,
-            'active'                  => $this->active,
-            'featured'                => $this->featured,
-            'order'                   => $this->order,
-            'price_cents'             => (int) round((float) $this->price * 100),
+            'name' => $this->name,
+            'slug' => $this->slug,
+            'category_id' => $this->category_id,
+            'collection_id' => $this->collection_id ?: null,
+            'tag' => $this->tag ?: null,
+            'occasion' => $this->occasion ?: null,
+            'active' => $this->active,
+            'featured' => $this->featured,
+            'order' => $this->order,
+            'price_cents' => (int) round((float) $this->price * 100),
             'promotional_price_cents' => filled($this->promotional_price) ? (int) round((float) $this->promotional_price * 100) : null,
-            'short_description'       => $this->short_description ?: null,
-            'description'             => $this->description ?: null,
-            'fabric'                  => $this->fabric ?: null,
-            'fabric_details'          => $this->fabric_details ?: null,
-            'sizes'                   => $this->sizes ?: null,
-            'colors'                  => $this->colors ?: null,
-            'care'                    => $this->care ?: null,
-            'primary_image'           => $primaryPath,
-            'gallery'                 => $galleryPaths ?: null,
+            'short_description' => $this->short_description ?: null,
+            'description' => $this->description ?: null,
+            'fabric' => $this->fabric ?: null,
+            'fabric_details' => $this->fabric_details ?: null,
+            'sizes' => $this->sizes ?: null,
+            'colors' => $this->colors ?: null,
+            'care' => $this->care ?: null,
+            'primary_image' => $primaryPath,
+            'gallery' => $galleryPaths ?: null,
         ]);
 
         $this->dispatch('toast', type: 'success', message: 'Produto criado com sucesso.');
@@ -120,7 +141,7 @@ class Create extends Component
     public function render(): View
     {
         return view('livewire.admin.pages.products.create', [
-            'categories'  => Category::orderBy('name')->get(),
+            'categories' => Category::orderBy('name')->get(),
             'collections' => Collection::orderBy('title')->get(),
         ]);
     }

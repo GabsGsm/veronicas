@@ -15,6 +15,39 @@ class Index extends Component
 {
     use HasAdminTable;
 
+    public function mount(): void
+    {
+        $this->sortBy = 'order';
+        $this->sortDir = 'asc';
+    }
+
+    public function moveUp(int $id): void
+    {
+        $item = Product::findOrFail($id);
+        $prev = Product::where('order', '<', $item->order)->orderByDesc('order')->first();
+        if ($prev) {
+            [$item->order, $prev->order] = [$prev->order, $item->order];
+            $item->save();
+            $prev->save();
+        }
+    }
+
+    public function moveDown(int $id): void
+    {
+        $item = Product::findOrFail($id);
+        $next = Product::where('order', '>', $item->order)->orderBy('order')->first();
+        if ($next) {
+            [$item->order, $next->order] = [$next->order, $item->order];
+            $item->save();
+            $next->save();
+        }
+    }
+
+    public function updateOrder(int $id, int $newOrder): void
+    {
+        Product::findOrFail($id)->update(['order' => $newOrder]);
+    }
+
     public function delete(int $id): void
     {
         Product::findOrFail($id)->delete();

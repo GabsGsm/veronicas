@@ -42,7 +42,7 @@
     @if ($collection->story)
         <x-editorial-banner
             :story="$collection->story"
-            :image="$collection->cover_image"
+            :image="$collection->cover_image ? Storage::url($collection->cover_image) : null"
         />
     @endif
 

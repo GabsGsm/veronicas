@@ -20,9 +20,9 @@ class Home extends Component
     {
         return view('livewire.pages.home', [
             'banners' => Banner::where('active', true)->orderBy('order')->get(),
-            'featuredProducts' => Product::where('featured', true)->with('category')->limit(4)->get(),
-            'newCollection' => Product::where('tag', 'Nova Coleção')->with('category')->limit(4)->get(),
-            'promoProducts' => Product::whereNotNull('promotional_price_cents')->with('category')->limit(4)->get(),
+            'featuredProducts' => Product::where('featured', true)->with('category')->orderBy('id', 'desc')->limit(4)->get(),
+            'newCollection' => Product::where('tag', 'Nova Coleção')->with('category')->orderBy('id', 'desc')->limit(4)->get(),
+            'promoProducts' => Product::whereNotNull('promotional_price_cents')->with('category')->orderBy('id', 'desc')->limit(4)->get(),
         ]);
     }
 }

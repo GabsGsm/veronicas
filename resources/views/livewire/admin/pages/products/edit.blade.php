@@ -49,12 +49,22 @@
 
                 <flux:field>
                     <flux:label>Tag</flux:label>
-                    <flux:input wire:model="tag" />
+                    <flux:select wire:model="tag">
+                        <option value="">Sem tag</option>
+                        @foreach (\App\Enums\ProductTag::cases() as $t)
+                            <option value="{{ $t->value }}">{{ $t->label() }}</option>
+                        @endforeach
+                    </flux:select>
                 </flux:field>
 
                 <flux:field>
                     <flux:label>Ocasião</flux:label>
-                    <flux:input wire:model="occasion" />
+                    <flux:select wire:model="occasion">
+                        <option value="">— Nenhuma —</option>
+                        @foreach (\App\Enums\Occasion::cases() as $o)
+                            <option value="{{ $o->value }}">{{ $o->label() }}</option>
+                        @endforeach
+                    </flux:select>
                 </flux:field>
 
                 <flux:field>
