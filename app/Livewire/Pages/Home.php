@@ -3,8 +3,7 @@
 namespace App\Livewire\Pages;
 
 use App\Livewire\Concerns\ManagesFavorites;
-use App\Models\Banner;
-use App\Models\Product;
+use App\Models\HomeContainer;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -18,11 +17,17 @@ class Home extends Component
 
     public function render(): View
     {
-        return view('livewire.pages.home', [
-            'banners' => Banner::where('active', true)->orderBy('order')->get(),
-            'featuredProducts' => Product::where('featured', true)->with('category')->orderBy('id', 'desc')->limit(4)->get(),
-            'newCollection' => Product::where('tag', 'Nova Coleção')->with('category')->orderBy('id', 'desc')->limit(4)->get(),
-            'promoProducts' => Product::whereNotNull('promotional_price_cents')->with('category')->orderBy('id', 'desc')->limit(4)->get(),
-        ]);
+        $containers = HomeContainer::where('active', true)
+            ->orderBy('order')
+            ->with(['sections' => fn ($q) => $q->where('active', true)->orderBy('order')])
+            ->get();
+
+        $containers->each(
+            fn ($container) => $container->sections->each(
+                fn ($section) => $section->setRelation('data', $section->loadData())
+            )
+        );
+
+        return view('livewire.pages.home', compact('containers'));
     }
 }

@@ -186,6 +186,12 @@
                         'label' => 'Loja',
                         'items' => [
                             [
+                                'label'   => 'Layout da Home',
+                                'icon'    => 'home',
+                                'route'   => 'admin.home-layout.index',
+                                'tooltip' => 'Containers e seções da página inicial',
+                            ],
+                            [
                                 'label'   => 'Menu do Site',
                                 'icon'    => 'bars-3',
                                 'route'   => 'admin.navigation.index',

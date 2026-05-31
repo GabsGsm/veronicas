@@ -44,4 +44,43 @@ return [
         'favorites' => 'Favoritos',
         'contact' => 'Contato',
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Tipos de componente e filtros da Home modular
+    |--------------------------------------------------------------------------
+    */
+
+    'home_component_types' => [
+        'cards' => 'Cards',
+        'list' => 'Lista',
+        'editorial' => 'Editorial / Destaque',
+        'highlight_stack' => 'Destaque + Pilha',
+        'highlight_list' => 'Destaque + Lista',
+        'high_grid' => 'Grade Elevada',
+        'product_carousel' => 'Carrossel de Produtos',
+        'banner_carousel' => 'Carrossel de Banners',
+        'featured_collection' => 'Coleção Destaque (Hero)',
+        'collection_grid' => 'Coleções em Grade',
+        'collection_list' => 'Coleções em Lista',
+    ],
+
+    'home_filter_types' => [
+        'all' => 'Todos os produtos',
+        'featured' => 'Em destaque',
+        'promotional' => 'Em promoção',
+        'new' => 'Mais recentes',
+        'category' => 'Por categoria',
+        'tag' => 'Por tag',
+        'occasion' => 'Por ocasião',
+        'collection' => 'Por coleção',
+    ],
+
+    'home_order_by' => [
+        'newest' => 'Mais recentes',
+        'featured' => 'Destaque primeiro',
+        'price_asc' => 'Menor preço',
+        'price_desc' => 'Maior preço',
+        'oldest' => 'Mais antigos',
+    ],
 ];

@@ -8,6 +8,7 @@ use App\Livewire\Admin\Pages\Categories;
 use App\Livewire\Admin\Pages\Collections;
 use App\Livewire\Admin\Pages\Colors;
 use App\Livewire\Admin\Pages\Dashboard;
+use App\Livewire\Admin\Pages\HomeLayout;
 use App\Livewire\Admin\Pages\Login;
 use App\Livewire\Admin\Pages\Navigation;
 use App\Livewire\Admin\Pages\Occasions;
@@ -81,6 +82,10 @@ Route::get('/tag/{tag}', Catalog::class)
     ->defaults('mode', 'tag')
     ->where('tag', '[a-z0-9-]+')
     ->name('catalog.tag');
+
+Route::get('/busca', Catalog::class)
+    ->defaults('mode', 'search')
+    ->name('catalog.search');
 
 // ---- Detalhes ----
 Route::get('/produto/{slug}', ProductDetail::class)
@@ -167,6 +172,13 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/usuarios', Users\Index::class)->name('users.index');
         Route::get('/usuarios/novo', Users\Create::class)->name('users.create');
         Route::get('/usuarios/{id}', Users\Edit::class)->name('users.edit');
+
+        // Layout da Home
+        Route::get('/home', HomeLayout\Index::class)->name('home-layout.index');
+        Route::get('/home/container/novo', HomeLayout\CreateContainer::class)->name('home-layout.container.create');
+        Route::get('/home/container/{id}', HomeLayout\EditContainer::class)->name('home-layout.container.edit');
+        Route::get('/home/container/{containerId}/secao/nova', HomeLayout\CreateSection::class)->name('home-layout.section.create');
+        Route::get('/home/container/{containerId}/secao/{id}', HomeLayout\EditSection::class)->name('home-layout.section.edit');
 
         // Utilitários
         Route::post('/clear-cache', ClearCacheController::class)->name('clear-cache');

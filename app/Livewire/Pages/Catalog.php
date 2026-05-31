@@ -22,6 +22,7 @@ use Livewire\WithPagination;
  *  - category  → category slug
  *  - occasion  → occasion slug → resolves to name
  *  - tag       → tag slug → resolves to name
+ *  - search    → filtros via query string: categorias[], tags[], ocasioes[], colecoes[], featured, promocional
  */
 #[Layout('components.layouts.app')]
 class Catalog extends Component
@@ -87,6 +88,11 @@ class Catalog extends Component
                     'subtitle' => 'Produtos selecionados',
                 ];
             })(),
+            $this->mode === 'search' => [
+                'decorative' => 'Busca',
+                'title' => 'Resultados',
+                'subtitle' => 'Produtos encontrados para sua seleção',
+            ],
             default => [
                 'decorative' => 'Catálogo',
                 'title' => 'Catálogo',
@@ -137,6 +143,42 @@ class Catalog extends Component
                     $query->where('tag', $tagModel->name);
                 }
             })(),
+            'search' => (function () use ($query): void {
+                $categorias = request()->query('categorias', []);
+                $tags = request()->query('tags', []);
+                $ocasioes = request()->query('ocasioes', []);
+                $colecoes = request()->query('colecoes', []);
+
+                if (! empty($categorias)) {
+                    $query->whereHas('category', fn ($q) => $q->whereIn('slug', (array) $categorias));
+                }
+
+                if (! empty($tags)) {
+                    $tagNames = Tag::whereIn('slug', (array) $tags)->pluck('name')->toArray();
+                    if (! empty($tagNames)) {
+                        $query->whereIn('tag', $tagNames);
+                    }
+                }
+
+                if (! empty($ocasioes)) {
+                    $occNames = Occasion::whereIn('slug', (array) $ocasioes)->pluck('name')->toArray();
+                    if (! empty($occNames)) {
+                        $query->whereIn('occasion', $occNames);
+                    }
+                }
+
+                if (! empty($colecoes)) {
+                    $query->whereHas('collection', fn ($q) => $q->whereIn('slug', (array) $colecoes));
+                }
+
+                if (request()->boolean('featured')) {
+                    $query->where('featured', true);
+                }
+
+                if (request()->boolean('promocional')) {
+                    $query->whereNotNull('promotional_price_cents');
+                }
+            })(),
             default => null,
         };
 
@@ -175,7 +217,19 @@ class Catalog extends Component
             }
         }
 
-        return $query->orderBy('order')->paginate(12);
+        if ($this->mode === 'search') {
+            match (request()->query('ordem', 'newest')) {
+                'oldest' => $query->oldest('id'),
+                'price_asc' => $query->orderBy('price_cents'),
+                'price_desc' => $query->orderBy('price_cents', 'desc'),
+                'featured' => $query->orderBy('featured', 'desc')->orderBy('order'),
+                default => $query->latest('id'),
+            };
+        } else {
+            $query->orderBy('order');
+        }
+
+        return $query->paginate(12);
     }
 
     public function render(): View

@@ -1803,3 +1803,1409 @@ Expression: "!icon" null 4954 null  {"url":"http://127.0.0.1:8001/admin/navegaca
     at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
     at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
     at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/admin/navegacao/4","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T04:23:26.369Z"} 
+[2026-05-31 08:42:05] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T08:42:04.118Z"} 
+[2026-05-31 16:13:29] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:13:28.476Z"} 
+[2026-05-31 16:14:13] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/admin/home","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:14:13.307Z"} 
+[2026-05-31 16:14:39] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:14:38.494Z"} 
+[2026-05-31 16:15:22] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.100Z"} 
+[2026-05-31 16:15:22] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.100Z"} 
+[2026-05-31 16:15:23] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.953Z"} 
+[2026-05-31 16:15:23] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.955Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index" null null null null null null null 1552 transition-opacity duration-700 opacity-0 opacity-100 transition-opacity duration-700 opacity-100 opacity-0 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.047Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.image" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.049Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.050Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "`object-position: ${slide.image_position || 'center'}`" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.051Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1554 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.052Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1555 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.052Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.hide_overlay && slide.href" null 1556 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.053Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.href" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.054Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.055Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70'" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.055Z"} 
+[2026-05-31 16:15:23] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "`Ir para slide ${index + 1}`" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.367Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.367Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.382Z"} 
+[2026-05-31 16:15:23] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.382Z"} 
+[2026-05-31 16:15:24] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.953Z"} 
+[2026-05-31 16:15:24] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.955Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index" null null null null null null null 1552 transition-opacity duration-700 opacity-0 opacity-100 transition-opacity duration-700 opacity-100 opacity-0 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.048Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.image" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.049Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.050Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "`object-position: ${slide.image_position || 'center'}`" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.051Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1554 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.052Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1555 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.053Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.hide_overlay && slide.href" null 1556 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.053Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.href" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.054Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.055Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70'" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "`Ir para slide ${index + 1}`" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.367Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.367Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.382Z"} 
+[2026-05-31 16:15:24] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.953Z"} 
+[2026-05-31 16:15:24] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.955Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index" null null null null null null null 1552 transition-opacity duration-700 opacity-0 opacity-100 transition-opacity duration-700 opacity-100 opacity-0 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.048Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.image" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.049Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.050Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "`object-position: ${slide.image_position || 'center'}`" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.051Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1554 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.052Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1555 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.053Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.hide_overlay && slide.href" null 1556 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.053Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.href" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.054Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.055Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70'" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "`Ir para slide ${index + 1}`" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.367Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.368Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.382Z"} 
+[2026-05-31 16:15:24] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:21.955Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index" null null null null null null null 1552 transition-opacity duration-700 opacity-0 opacity-100 transition-opacity duration-700 opacity-100 opacity-0 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.048Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.image" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.049Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.050Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "`object-position: ${slide.image_position || 'center'}`" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.051Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1554 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.052Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1555 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.053Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.hide_overlay && slide.href" null 1556 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.054Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.href" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.054Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.055Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70'" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:24] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "`Ir para slide ${index + 1}`" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.367Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.368Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:24] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.382Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index" null null null null null null null 1552 transition-opacity duration-700 opacity-0 opacity-100 transition-opacity duration-700 opacity-100 opacity-0 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.048Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.image" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.049Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.050Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "`object-position: ${slide.image_position || 'center'}`" null null null slide.image false slide.title false `object-position: ${slide.image_position || 'center'}` false 1553 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.051Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1554 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.052Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "!slide.hide_overlay" null 1555 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.053Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.hide_overlay && slide.href" null 1556 null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.054Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.href" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.054Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: slide is not defined
+
+Expression: "slide.title" null null null null null slide.href false slide.title false 1557 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.055Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70'" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:25] production.WARNING: Alpine Expression Error: index is not defined
+
+Expression: "`Ir para slide ${index + 1}`" null null null current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' false `Ir para slide ${index + 1}` false 1566 null null null  {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.056Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.367Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.368Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.image (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.377Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] `object-position: ${slide.image_position || 'center'}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:52)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4043:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.378Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] !slide.hide_overlay (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:33)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.hide_overlay && slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at Function.<anonymous> (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:4238:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.379Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.href (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: slide is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError slide is not defined ReferenceError: slide is not defined
+    at [Alpine] slide.title (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:32)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.380Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] current === index ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70' (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:44)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.381Z"} 
+[2026-05-31 16:15:25] production.ERROR: Uncaught ReferenceError: index is not defined http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c 1397 7 ReferenceError index is not defined ReferenceError: index is not defined
+    at [Alpine] `Ir para slide ${index + 1}` (eval at safeAsyncFunction (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1453:21), <anonymous>:3:49)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1478:28
+    at tryCatch (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1376:14)
+    at http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:19
+    at reactiveEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2756:18)
+    at Object.effect2 [as effect] (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:2731:7)
+    at effect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:988:35)
+    at wrappedEffect (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1004:29)
+    at handler2 (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:3947:5)
+    at flushHandlers (http://127.0.0.1:8001/livewire-5bd5ba27/livewire.js?id=ab6b028c:1595:48) {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.382Z"} 
+[2026-05-31 16:15:25] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.847Z"} 
+[2026-05-31 16:15:25] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.849Z"} 
+[2026-05-31 16:15:25] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.848Z"} 
+[2026-05-31 16:15:25] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.850Z"} 
+[2026-05-31 16:15:26] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.848Z"} 
+[2026-05-31 16:15:26] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.850Z"} 
+[2026-05-31 16:15:26] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.848Z"} 
+[2026-05-31 16:15:26] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.850Z"} 
+[2026-05-31 16:15:26] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.848Z"} 
+[2026-05-31 16:15:26] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.850Z"} 
+[2026-05-31 16:15:26] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/destaques","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:15:22.850Z"} 
+[2026-05-31 16:16:50] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T16:16:49.933Z"} 
+[2026-05-31 18:02:34] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T18:02:32.772Z"} 
+[2026-05-31 18:02:42] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T18:02:40.910Z"} 
+[2026-05-31 18:02:42] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T18:02:40.912Z"} 
+[2026-05-31 18:02:43] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T18:02:40.910Z"} 
+[2026-05-31 18:02:43] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T18:02:40.912Z"} 
+[2026-05-31 18:02:44] production.DEBUG: 🔍 Browser logger active (MCP server detected). Posting to: http://127.0.0.1:8001/_boost/browser-logs {"url":"http://127.0.0.1:8001/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36","timestamp":"2026-05-31T18:02:40.912Z"} 

@@ -93,271 +93,277 @@
     
     
     
-    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($banners->isNotEmpty()): ?>
-        <div class="mb-16">
-            <?php if (isset($component)) { $__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal7c65c7b292d8ab163b5839aa2f2c30c5 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.hero-carousel','data' => ['banners' => $banners]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('hero-carousel'); ?>
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::openLoop(); ?><?php endif; ?><?php $__currentLoopData = $containers; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $container): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::startLoopIteration(); ?><?php endif; ?>
+        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::openLoop(); ?><?php endif; ?><?php $__currentLoopData = $container->sections; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $section): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::startLoopIteration(); ?><?php endif; ?>
+            <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($section->data->isNotEmpty()): ?>
+                <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php switch($section->component_type):
+                    case ('cards'): ?>
+                        <?php if (isset($component)) { $__componentOriginal013314ba3262869ef1c8314e46a0dabf = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal013314ba3262869ef1c8314e46a0dabf = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-products','data' => ['section' => $section,'favorites' => $favorites,'layout' => 'cards']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-products'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['banners' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($banners)]); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites),'layout' => 'cards']); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal7c65c7b292d8ab163b5839aa2f2c30c5)): ?>
-<?php $attributes = $__attributesOriginal7c65c7b292d8ab163b5839aa2f2c30c5; ?>
-<?php unset($__attributesOriginal7c65c7b292d8ab163b5839aa2f2c30c5); ?>
+<?php if (isset($__attributesOriginal013314ba3262869ef1c8314e46a0dabf)): ?>
+<?php $attributes = $__attributesOriginal013314ba3262869ef1c8314e46a0dabf; ?>
+<?php unset($__attributesOriginal013314ba3262869ef1c8314e46a0dabf); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5)): ?>
-<?php $component = $__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5; ?>
-<?php unset($__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5); ?>
+<?php if (isset($__componentOriginal013314ba3262869ef1c8314e46a0dabf)): ?>
+<?php $component = $__componentOriginal013314ba3262869ef1c8314e46a0dabf; ?>
+<?php unset($__componentOriginal013314ba3262869ef1c8314e46a0dabf); ?>
 <?php endif; ?>
-        </div>
-    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
-
-    
-    
-    
-    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($featuredProducts->isNotEmpty()): ?>
-        <section class="mb-16">
-            <?php if (isset($component)) { $__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section-title','data' => ['title' => 'Destaques da Semana','subtitle' => 'Peças especialmente selecionadas para você']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('section-title'); ?>
+                        <?php break; ?>
+                    <?php case ('list'): ?>
+                        <?php if (isset($component)) { $__componentOriginal013314ba3262869ef1c8314e46a0dabf = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal013314ba3262869ef1c8314e46a0dabf = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-products','data' => ['section' => $section,'favorites' => $favorites,'layout' => 'list']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-products'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['title' => 'Destaques da Semana','subtitle' => 'Peças especialmente selecionadas para você']); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites),'layout' => 'list']); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78)): ?>
-<?php $attributes = $__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78; ?>
-<?php unset($__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78); ?>
+<?php if (isset($__attributesOriginal013314ba3262869ef1c8314e46a0dabf)): ?>
+<?php $attributes = $__attributesOriginal013314ba3262869ef1c8314e46a0dabf; ?>
+<?php unset($__attributesOriginal013314ba3262869ef1c8314e46a0dabf); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78)): ?>
-<?php $component = $__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78; ?>
-<?php unset($__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78); ?>
+<?php if (isset($__componentOriginal013314ba3262869ef1c8314e46a0dabf)): ?>
+<?php $component = $__componentOriginal013314ba3262869ef1c8314e46a0dabf; ?>
+<?php unset($__componentOriginal013314ba3262869ef1c8314e46a0dabf); ?>
 <?php endif; ?>
-            <?php if (isset($component)) { $__componentOriginala87666a6c7dfd023b4375fc379bf394c = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginala87666a6c7dfd023b4375fc379bf394c = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.product-grid','data' => ['products' => $featuredProducts,'favorites' => $favorites]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('product-grid'); ?>
+                        <?php break; ?>
+                    <?php case ('high_grid'): ?>
+                        <?php if (isset($component)) { $__componentOriginalc6539d43ff48afdc38c2b3a6244f4a37 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc6539d43ff48afdc38c2b3a6244f4a37 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-high-grid','data' => ['section' => $section,'favorites' => $favorites]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-high-grid'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['products' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($featuredProducts),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites)]); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites)]); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginala87666a6c7dfd023b4375fc379bf394c)): ?>
-<?php $attributes = $__attributesOriginala87666a6c7dfd023b4375fc379bf394c; ?>
-<?php unset($__attributesOriginala87666a6c7dfd023b4375fc379bf394c); ?>
+<?php if (isset($__attributesOriginalc6539d43ff48afdc38c2b3a6244f4a37)): ?>
+<?php $attributes = $__attributesOriginalc6539d43ff48afdc38c2b3a6244f4a37; ?>
+<?php unset($__attributesOriginalc6539d43ff48afdc38c2b3a6244f4a37); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginala87666a6c7dfd023b4375fc379bf394c)): ?>
-<?php $component = $__componentOriginala87666a6c7dfd023b4375fc379bf394c; ?>
-<?php unset($__componentOriginala87666a6c7dfd023b4375fc379bf394c); ?>
+<?php if (isset($__componentOriginalc6539d43ff48afdc38c2b3a6244f4a37)): ?>
+<?php $component = $__componentOriginalc6539d43ff48afdc38c2b3a6244f4a37; ?>
+<?php unset($__componentOriginalc6539d43ff48afdc38c2b3a6244f4a37); ?>
 <?php endif; ?>
-            <div class="mt-8 text-center">
-                <a href="<?php echo e(route('catalog.featured')); ?>" wire:navigate
-                   class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-sans text-sm transition-all">
-                    Ver mais
-                    <?php if (isset($component)) { $__componentOriginalce262628e3a8d44dc38fd1f3965181bc = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginalce262628e3a8d44dc38fd1f3965181bc = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.icon','data' => ['name' => 'arrow-right','class' => 'w-4 h-4']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('icon'); ?>
+                        <?php break; ?>
+                    <?php case ('editorial'): ?>
+                        <?php if (isset($component)) { $__componentOriginaldc14074dbba501f35ac542927fc3f42c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginaldc14074dbba501f35ac542927fc3f42c = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-editorial','data' => ['section' => $section,'favorites' => $favorites]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-editorial'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['name' => 'arrow-right','class' => 'w-4 h-4']); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites)]); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginalce262628e3a8d44dc38fd1f3965181bc)): ?>
-<?php $attributes = $__attributesOriginalce262628e3a8d44dc38fd1f3965181bc; ?>
-<?php unset($__attributesOriginalce262628e3a8d44dc38fd1f3965181bc); ?>
+<?php if (isset($__attributesOriginaldc14074dbba501f35ac542927fc3f42c)): ?>
+<?php $attributes = $__attributesOriginaldc14074dbba501f35ac542927fc3f42c; ?>
+<?php unset($__attributesOriginaldc14074dbba501f35ac542927fc3f42c); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginalce262628e3a8d44dc38fd1f3965181bc)): ?>
-<?php $component = $__componentOriginalce262628e3a8d44dc38fd1f3965181bc; ?>
-<?php unset($__componentOriginalce262628e3a8d44dc38fd1f3965181bc); ?>
+<?php if (isset($__componentOriginaldc14074dbba501f35ac542927fc3f42c)): ?>
+<?php $component = $__componentOriginaldc14074dbba501f35ac542927fc3f42c; ?>
+<?php unset($__componentOriginaldc14074dbba501f35ac542927fc3f42c); ?>
 <?php endif; ?>
-                </a>
-            </div>
-        </section>
-    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
-
-    
-    
-    
-    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($newCollection->isNotEmpty()): ?>
-        <section class="mb-16">
-            <?php if (isset($component)) { $__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section-title','data' => ['title' => 'Nova Coleção','subtitle' => 'As últimas tendências em moda feminina premium']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('section-title'); ?>
+                        <?php break; ?>
+                    <?php case ('highlight_stack'): ?>
+                        <?php if (isset($component)) { $__componentOriginalc3548864a3df79bbac079ffbf1f5eee0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-highlight','data' => ['section' => $section,'favorites' => $favorites,'mode' => 'stack']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-highlight'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['title' => 'Nova Coleção','subtitle' => 'As últimas tendências em moda feminina premium']); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites),'mode' => 'stack']); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78)): ?>
-<?php $attributes = $__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78; ?>
-<?php unset($__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78); ?>
+<?php if (isset($__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0)): ?>
+<?php $attributes = $__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0; ?>
+<?php unset($__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78)): ?>
-<?php $component = $__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78; ?>
-<?php unset($__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78); ?>
+<?php if (isset($__componentOriginalc3548864a3df79bbac079ffbf1f5eee0)): ?>
+<?php $component = $__componentOriginalc3548864a3df79bbac079ffbf1f5eee0; ?>
+<?php unset($__componentOriginalc3548864a3df79bbac079ffbf1f5eee0); ?>
 <?php endif; ?>
-            <?php if (isset($component)) { $__componentOriginala87666a6c7dfd023b4375fc379bf394c = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginala87666a6c7dfd023b4375fc379bf394c = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.product-grid','data' => ['products' => $newCollection,'favorites' => $favorites]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('product-grid'); ?>
+                        <?php break; ?>
+                    <?php case ('highlight_list'): ?>
+                        <?php if (isset($component)) { $__componentOriginalc3548864a3df79bbac079ffbf1f5eee0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-highlight','data' => ['section' => $section,'favorites' => $favorites,'mode' => 'list']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-highlight'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['products' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($newCollection),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites)]); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites),'mode' => 'list']); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginala87666a6c7dfd023b4375fc379bf394c)): ?>
-<?php $attributes = $__attributesOriginala87666a6c7dfd023b4375fc379bf394c; ?>
-<?php unset($__attributesOriginala87666a6c7dfd023b4375fc379bf394c); ?>
+<?php if (isset($__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0)): ?>
+<?php $attributes = $__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0; ?>
+<?php unset($__attributesOriginalc3548864a3df79bbac079ffbf1f5eee0); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginala87666a6c7dfd023b4375fc379bf394c)): ?>
-<?php $component = $__componentOriginala87666a6c7dfd023b4375fc379bf394c; ?>
-<?php unset($__componentOriginala87666a6c7dfd023b4375fc379bf394c); ?>
+<?php if (isset($__componentOriginalc3548864a3df79bbac079ffbf1f5eee0)): ?>
+<?php $component = $__componentOriginalc3548864a3df79bbac079ffbf1f5eee0; ?>
+<?php unset($__componentOriginalc3548864a3df79bbac079ffbf1f5eee0); ?>
 <?php endif; ?>
-            <div class="mt-8 text-center">
-                <a href="<?php echo e(route('catalog.new')); ?>" wire:navigate
-                   class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-sans text-sm transition-all">
-                    Ver mais
-                    <?php if (isset($component)) { $__componentOriginalce262628e3a8d44dc38fd1f3965181bc = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginalce262628e3a8d44dc38fd1f3965181bc = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.icon','data' => ['name' => 'arrow-right','class' => 'w-4 h-4']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('icon'); ?>
+                        <?php break; ?>
+                    <?php case ('product_carousel'): ?>
+                        <?php if (isset($component)) { $__componentOriginal12d0b256b523448360125eace09af447 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal12d0b256b523448360125eace09af447 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-product-carousel','data' => ['section' => $section,'favorites' => $favorites]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-product-carousel'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['name' => 'arrow-right','class' => 'w-4 h-4']); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites)]); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginalce262628e3a8d44dc38fd1f3965181bc)): ?>
-<?php $attributes = $__attributesOriginalce262628e3a8d44dc38fd1f3965181bc; ?>
-<?php unset($__attributesOriginalce262628e3a8d44dc38fd1f3965181bc); ?>
+<?php if (isset($__attributesOriginal12d0b256b523448360125eace09af447)): ?>
+<?php $attributes = $__attributesOriginal12d0b256b523448360125eace09af447; ?>
+<?php unset($__attributesOriginal12d0b256b523448360125eace09af447); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginalce262628e3a8d44dc38fd1f3965181bc)): ?>
-<?php $component = $__componentOriginalce262628e3a8d44dc38fd1f3965181bc; ?>
-<?php unset($__componentOriginalce262628e3a8d44dc38fd1f3965181bc); ?>
+<?php if (isset($__componentOriginal12d0b256b523448360125eace09af447)): ?>
+<?php $component = $__componentOriginal12d0b256b523448360125eace09af447; ?>
+<?php unset($__componentOriginal12d0b256b523448360125eace09af447); ?>
 <?php endif; ?>
-                </a>
-            </div>
-        </section>
-    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
-
-    
-    
-    
-    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($promoProducts->isNotEmpty()): ?>
-        <section class="mb-16">
-            <?php if (isset($component)) { $__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.section-title','data' => ['title' => 'Promoções Especiais','subtitle' => 'Aproveite ofertas exclusivas']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('section-title'); ?>
+                        <?php break; ?>
+                    <?php case ('banner_carousel'): ?>
+                        <?php if (isset($component)) { $__componentOriginalb85ec5e8d71c1122c80341621d973c04 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalb85ec5e8d71c1122c80341621d973c04 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-banner-carousel','data' => ['section' => $section]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-banner-carousel'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['title' => 'Promoções Especiais','subtitle' => 'Aproveite ofertas exclusivas']); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section)]); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78)): ?>
-<?php $attributes = $__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78; ?>
-<?php unset($__attributesOriginal6a0a1523cc2edf33c83fe20a5d1f7f78); ?>
+<?php if (isset($__attributesOriginalb85ec5e8d71c1122c80341621d973c04)): ?>
+<?php $attributes = $__attributesOriginalb85ec5e8d71c1122c80341621d973c04; ?>
+<?php unset($__attributesOriginalb85ec5e8d71c1122c80341621d973c04); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78)): ?>
-<?php $component = $__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78; ?>
-<?php unset($__componentOriginal6a0a1523cc2edf33c83fe20a5d1f7f78); ?>
+<?php if (isset($__componentOriginalb85ec5e8d71c1122c80341621d973c04)): ?>
+<?php $component = $__componentOriginalb85ec5e8d71c1122c80341621d973c04; ?>
+<?php unset($__componentOriginalb85ec5e8d71c1122c80341621d973c04); ?>
 <?php endif; ?>
-            <?php if (isset($component)) { $__componentOriginala87666a6c7dfd023b4375fc379bf394c = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginala87666a6c7dfd023b4375fc379bf394c = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.product-grid','data' => ['products' => $promoProducts,'favorites' => $favorites]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('product-grid'); ?>
+                        <?php break; ?>
+                    <?php case ('featured_collection'): ?>
+                        <?php if (isset($component)) { $__componentOriginal9ad0201162f67e5385e1d303d38e9c9d = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-collection','data' => ['section' => $section,'layout' => 'hero']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-collection'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['products' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($promoProducts),'favorites' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($favorites)]); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'layout' => 'hero']); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginala87666a6c7dfd023b4375fc379bf394c)): ?>
-<?php $attributes = $__attributesOriginala87666a6c7dfd023b4375fc379bf394c; ?>
-<?php unset($__attributesOriginala87666a6c7dfd023b4375fc379bf394c); ?>
+<?php if (isset($__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d)): ?>
+<?php $attributes = $__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d; ?>
+<?php unset($__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginala87666a6c7dfd023b4375fc379bf394c)): ?>
-<?php $component = $__componentOriginala87666a6c7dfd023b4375fc379bf394c; ?>
-<?php unset($__componentOriginala87666a6c7dfd023b4375fc379bf394c); ?>
+<?php if (isset($__componentOriginal9ad0201162f67e5385e1d303d38e9c9d)): ?>
+<?php $component = $__componentOriginal9ad0201162f67e5385e1d303d38e9c9d; ?>
+<?php unset($__componentOriginal9ad0201162f67e5385e1d303d38e9c9d); ?>
 <?php endif; ?>
-            <div class="mt-8 text-center">
-                <a href="<?php echo e(route('catalog.sale')); ?>" wire:navigate
-                   class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-sans text-sm transition-all">
-                    Ver mais
-                    <?php if (isset($component)) { $__componentOriginalce262628e3a8d44dc38fd1f3965181bc = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginalce262628e3a8d44dc38fd1f3965181bc = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.icon','data' => ['name' => 'arrow-right','class' => 'w-4 h-4']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('icon'); ?>
+                        <?php break; ?>
+                    <?php case ('collection_grid'): ?>
+                        <?php if (isset($component)) { $__componentOriginal9ad0201162f67e5385e1d303d38e9c9d = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-collection','data' => ['section' => $section,'layout' => 'grid']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-collection'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['name' => 'arrow-right','class' => 'w-4 h-4']); ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'layout' => 'grid']); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginalce262628e3a8d44dc38fd1f3965181bc)): ?>
-<?php $attributes = $__attributesOriginalce262628e3a8d44dc38fd1f3965181bc; ?>
-<?php unset($__attributesOriginalce262628e3a8d44dc38fd1f3965181bc); ?>
+<?php if (isset($__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d)): ?>
+<?php $attributes = $__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d; ?>
+<?php unset($__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginalce262628e3a8d44dc38fd1f3965181bc)): ?>
-<?php $component = $__componentOriginalce262628e3a8d44dc38fd1f3965181bc; ?>
-<?php unset($__componentOriginalce262628e3a8d44dc38fd1f3965181bc); ?>
+<?php if (isset($__componentOriginal9ad0201162f67e5385e1d303d38e9c9d)): ?>
+<?php $component = $__componentOriginal9ad0201162f67e5385e1d303d38e9c9d; ?>
+<?php unset($__componentOriginal9ad0201162f67e5385e1d303d38e9c9d); ?>
 <?php endif; ?>
-                </a>
-            </div>
-        </section>
-    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+                        <?php break; ?>
+                    <?php case ('collection_list'): ?>
+                        <?php if (isset($component)) { $__componentOriginal9ad0201162f67e5385e1d303d38e9c9d = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.home.section-collection','data' => ['section' => $section,'layout' => 'list']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('home.section-collection'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['section' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($section),'layout' => 'list']); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d)): ?>
+<?php $attributes = $__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d; ?>
+<?php unset($__attributesOriginal9ad0201162f67e5385e1d303d38e9c9d); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal9ad0201162f67e5385e1d303d38e9c9d)): ?>
+<?php $component = $__componentOriginal9ad0201162f67e5385e1d303d38e9c9d; ?>
+<?php unset($__componentOriginal9ad0201162f67e5385e1d303d38e9c9d); ?>
+<?php endif; ?>
+                        <?php break; ?>
+                <?php endswitch; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+            <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::endLoop(); ?><?php endif; ?><?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::closeLoop(); ?><?php endif; ?>
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::endLoop(); ?><?php endif; ?><?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::closeLoop(); ?><?php endif; ?>
 </div>
 <?php /**PATH C:\Users\raku_\Desktop\Vulpi Studio\Veronicas_Fashion\veronica-fashion\resources\views/livewire/pages/home.blade.php ENDPATH**/ ?>

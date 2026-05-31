@@ -58,71 +58,47 @@
     />
 
     {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    {{-- Hero Carousel                                                       --}}
+    {{-- Seções dinâmicas da Home                                            --}}
     {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    @if ($banners->isNotEmpty())
-        <div class="mb-16">
-            <x-hero-carousel :banners="$banners" />
-        </div>
-    @endif
-
-    {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    {{-- Destaques                                                           --}}
-    {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    @if ($featuredProducts->isNotEmpty())
-        <section class="mb-16">
-            <x-section-title
-                title="Destaques da Semana"
-                subtitle="Peças especialmente selecionadas para você"
-            />
-            <x-product-grid :products="$featuredProducts" :favorites="$favorites" />
-            <div class="mt-8 text-center">
-                <a href="{{ route('catalog.featured') }}" wire:navigate
-                   class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-sans text-sm transition-all">
-                    Ver mais
-                    <x-icon name="arrow-right" class="w-4 h-4" />
-                </a>
-            </div>
-        </section>
-    @endif
-
-    {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    {{-- Nova Coleção                                                        --}}
-    {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    @if ($newCollection->isNotEmpty())
-        <section class="mb-16">
-            <x-section-title
-                title="Nova Coleção"
-                subtitle="As últimas tendências em moda feminina premium"
-            />
-            <x-product-grid :products="$newCollection" :favorites="$favorites" />
-            <div class="mt-8 text-center">
-                <a href="{{ route('catalog.new') }}" wire:navigate
-                   class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-sans text-sm transition-all">
-                    Ver mais
-                    <x-icon name="arrow-right" class="w-4 h-4" />
-                </a>
-            </div>
-        </section>
-    @endif
-
-    {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    {{-- Promoções                                                           --}}
-    {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
-    @if ($promoProducts->isNotEmpty())
-        <section class="mb-16">
-            <x-section-title
-                title="Promoções Especiais"
-                subtitle="Aproveite ofertas exclusivas"
-            />
-            <x-product-grid :products="$promoProducts" :favorites="$favorites" />
-            <div class="mt-8 text-center">
-                <a href="{{ route('catalog.sale') }}" wire:navigate
-                   class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-sans text-sm transition-all">
-                    Ver mais
-                    <x-icon name="arrow-right" class="w-4 h-4" />
-                </a>
-            </div>
-        </section>
-    @endif
+    @foreach ($containers as $container)
+        @foreach ($container->sections as $section)
+            @if ($section->data->isNotEmpty())
+                @switch($section->component_type)
+                    @case('cards')
+                        <x-home.section-products :$section :$favorites layout="cards" />
+                        @break
+                    @case('list')
+                        <x-home.section-products :$section :$favorites layout="list" />
+                        @break
+                    @case('high_grid')
+                        <x-home.section-high-grid :$section :$favorites />
+                        @break
+                    @case('editorial')
+                        <x-home.section-editorial :$section :$favorites />
+                        @break
+                    @case('highlight_stack')
+                        <x-home.section-highlight :$section :$favorites mode="stack" />
+                        @break
+                    @case('highlight_list')
+                        <x-home.section-highlight :$section :$favorites mode="list" />
+                        @break
+                    @case('product_carousel')
+                        <x-home.section-product-carousel :$section :$favorites />
+                        @break
+                    @case('banner_carousel')
+                        <x-home.section-banner-carousel :$section />
+                        @break
+                    @case('featured_collection')
+                        <x-home.section-collection :$section layout="hero" />
+                        @break
+                    @case('collection_grid')
+                        <x-home.section-collection :$section layout="grid" />
+                        @break
+                    @case('collection_list')
+                        <x-home.section-collection :$section layout="list" />
+                        @break
+                @endswitch
+            @endif
+        @endforeach
+    @endforeach
 </div>
