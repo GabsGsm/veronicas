@@ -1,3 +1,106 @@
+@push('meta')
+@php
+    use Illuminate\Support\Facades\Storage;
+    use Illuminate\Support\Str;
+
+    $productUrl   = route('product.show', $product->slug);
+    $productImage = $product->primary_image
+        ? url(Storage::disk('public')->url($product->primary_image))
+        : asset('web-app-manifest-512x512.png');
+
+    $metaTitle = $product->name . " | Verônica's Fashion";
+    $metaDesc  = $product->short_description
+        ?? Str::limit(strip_tags($product->description ?? ''), 160)
+        ?: "Confira {$product->name} na Verônica's Fashion. Moda feminina premium com elegância e sofisticação.";
+
+    $price = number_format(
+        ($product->promotional_price_cents ?? $product->price_cents) / 100,
+        2, '.', ''
+    );
+
+    // Todas as imagens da galeria como URLs absolutas
+    $allImages = array_map(fn ($img) => url($img), $product->images);
+
+    $productSchema = [
+        '@context' => 'https://schema.org',
+        '@type'    => 'Product',
+        'name'     => $product->name,
+        'url'      => $productUrl,
+        'image'    => $allImages,
+        'description' => strip_tags($product->description ?? $product->short_description ?? ''),
+        'brand' => [
+            '@type' => 'Brand',
+            'name'  => "Verônica's Fashion",
+        ],
+        'offers' => [
+            '@type'         => 'Offer',
+            'price'         => $price,
+            'priceCurrency' => 'BRL',
+            'availability'  => 'https://schema.org/InStock',
+            'url'           => $productUrl,
+            'seller'        => [
+                '@type' => 'Organization',
+                'name'  => "Verônica's Fashion",
+            ],
+        ],
+    ];
+
+    if ($product->category) {
+        $productSchema['category'] = $product->category->name;
+    }
+    if (!empty($product->sizes)) {
+        $productSchema['size'] = implode(', ', $product->sizes);
+    }
+    if ($product->fabric) {
+        $productSchema['material'] = $product->fabric;
+    }
+    if ($product->promotional_price_cents) {
+        $productSchema['offers']['priceValidUntil'] = now()->addMonths(3)->toDateString();
+    }
+
+    // Breadcrumb
+    $breadcrumbItems = [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Início', 'item' => route('home')],
+    ];
+    $pos = 2;
+    if ($collection) {
+        $breadcrumbItems[] = [
+            '@type'    => 'ListItem',
+            'position' => $pos++,
+            'name'     => $collection->title,
+            'item'     => route('collection.show', $collection->slug),
+        ];
+    } elseif ($product->category) {
+        $breadcrumbItems[] = [
+            '@type'    => 'ListItem',
+            'position' => $pos++,
+            'name'     => $product->category->name,
+            'item'     => route('catalog.category', $product->category->slug),
+        ];
+    }
+    $breadcrumbItems[] = [
+        '@type'    => 'ListItem',
+        'position' => $pos,
+        'name'     => $product->name,
+        'item'     => $productUrl,
+    ];
+
+    $breadcrumbSchema = [
+        '@context'        => 'https://schema.org',
+        '@type'           => 'BreadcrumbList',
+        'itemListElement' => $breadcrumbItems,
+    ];
+@endphp
+<x-seo
+    :title="$metaTitle"
+    :description="$metaDesc"
+    :image="$productImage"
+    :url="$productUrl"
+    type="product"
+    :json-ld="[$productSchema, $breadcrumbSchema]"
+/>
+@endpush
+
 <div class="max-w-7xl mx-auto">
     {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
     {{-- Breadcrumb / Voltar                                                 --}}

@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Allow: /
+
+Disallow: /admin/
+Disallow: /favoritos
+Disallow: /storage/
+
+# Sitemap URL is served dynamically at /sitemap.xml

@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-    <title><?php echo e($title ?? "Verônica's Fashion — Catálogo Premium"); ?></title>
-    <meta name="description" content="Catálogo digital premium da Verônica's Fashion — boutique feminina de elegância atemporal.">
+    <title><?php echo e($title ?? "Verônica's Fashion - Catálogo"); ?></title>
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
+    <?php echo $__env->yieldPushContent('meta'); ?>
+
+    <link rel="icon" type="image/png" href="<?php echo e(asset('favicon-96x96.png')); ?>" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="<?php echo e(asset('favicon.svg')); ?>" />
+    <link rel="shortcut icon" href="<?php echo e(asset('favicon.ico')); ?>" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo e(asset('apple-touch-icon.png')); ?>" />
+    <meta name="apple-mobile-web-app-title" content="Verônica's Fashion" />
+    <link rel="manifest" href="<?php echo e(asset('site.webmanifest')); ?>" />
 
     <?php echo app('Illuminate\Foundation\Vite')->fonts(); ?>
 

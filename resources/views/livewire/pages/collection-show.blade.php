@@ -1,3 +1,51 @@
+@push('meta')
+@php
+    use Illuminate\Support\Facades\Storage;
+    use Illuminate\Support\Str;
+
+    $collectionUrl   = route('collection.show', $collection->slug);
+    $collectionImage = $collection->cover_image_url
+        ? url($collection->cover_image_url)
+        : ($collection->banner_image_url ? url($collection->banner_image_url) : asset('web-app-manifest-512x512.png'));
+
+    $metaTitle = $collection->title . " | Verônica's Fashion";
+    $metaDesc  = $collection->description
+        ?? $collection->subtitle
+        ?? "Explore a coleção {$collection->title} da Verônica's Fashion. Peças exclusivas de moda feminina premium.";
+
+    $collectionSchema = [
+        '@context'    => 'https://schema.org',
+        '@type'       => 'CollectionPage',
+        'name'        => $collection->title,
+        'description' => strip_tags($collection->description ?? $collection->subtitle ?? ''),
+        'url'         => $collectionUrl,
+        'image'       => $collectionImage,
+        'provider'    => [
+            '@type' => 'Organization',
+            'name'  => "Verônica's Fashion",
+            'url'   => route('home'),
+        ],
+    ];
+
+    $breadcrumbSchema = [
+        '@context'        => 'https://schema.org',
+        '@type'           => 'BreadcrumbList',
+        'itemListElement' => [
+            ['@type' => 'ListItem', 'position' => 1, 'name' => 'Início', 'item' => route('home')],
+            ['@type' => 'ListItem', 'position' => 2, 'name' => $collection->title, 'item' => $collectionUrl],
+        ],
+    ];
+@endphp
+<x-seo
+    :title="$metaTitle"
+    :description="$metaDesc"
+    :image="$collectionImage"
+    :url="$collectionUrl"
+    type="website"
+    :json-ld="[$collectionSchema, $breadcrumbSchema]"
+/>
+@endpush
+
 <div class="max-w-7xl mx-auto">
     {{-- Hero Banner --}}
     <x-collection-hero
@@ -42,7 +90,7 @@
     @if ($collection->story)
         <x-editorial-banner
             :story="$collection->story"
-            :image="$collection->cover_image ? Storage::url($collection->cover_image) : null"
+            :image="$collection->cover_image_url"
         />
     @endif
 

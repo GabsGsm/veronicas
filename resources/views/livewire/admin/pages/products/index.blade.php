@@ -49,7 +49,7 @@
                         <tr class="hover:bg-slate-50 transition-colors" wire:key="product-{{ $product->id }}">
                             <td class="px-4 py-3">
                                 @if ($product->primary_image)
-                                    <img src="{{ Storage::url($product->primary_image) }}"
+                                    <img src="{{ Storage::disk('public')->url($product->primary_image) }}"
                                          alt="{{ $product->name }}"
                                          class="w-10 h-10 rounded-lg object-cover">
                                 @else

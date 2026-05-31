@@ -51,16 +51,19 @@
                         </h3>
                         <div class="flex flex-wrap gap-2">
                             @foreach ($filterOptions['colors'] as $color)
+                                @php $colorName = $color['name']; @endphp
                                 <button
                                     type="button"
-                                    wire:click="toggleColor('{{ $color }}')"
+                                    wire:click="toggleColor('{{ $colorName }}')"
+                                    title="{{ $colorName }}"
                                     @class([
-                                        'px-3 py-2 border rounded-lg transition-colors font-sans text-xs',
-                                        'border-primary bg-primary/10 text-primary' => in_array($color, $selectedColors, true),
-                                        'border-border hover:border-primary hover:bg-primary/5' => ! in_array($color, $selectedColors, true),
+                                        'flex items-center gap-1.5 px-2 py-1.5 border rounded-lg transition-colors font-sans text-xs',
+                                        'border-primary bg-primary/10 text-primary' => in_array($colorName, $selectedColors, true),
+                                        'border-border hover:border-primary hover:bg-primary/5' => ! in_array($colorName, $selectedColors, true),
                                     ])
                                 >
-                                    {{ $color }}
+                                    <span class="w-4 h-4 rounded-full border border-border/50 shrink-0" style="background-color: {{ $color['hex_code'] }};"></span>
+                                    {{ $colorName }}
                                 </button>
                             @endforeach
                         </div>

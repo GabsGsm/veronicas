@@ -73,16 +73,19 @@
                         </h3>
                         <div class="flex flex-wrap gap-2">
                             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::openLoop(); ?><?php endif; ?><?php $__currentLoopData = $filterOptions['colors']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $color): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::startLoopIteration(); ?><?php endif; ?>
+                                <?php $colorName = $color['name']; ?>
                                 <button
                                     type="button"
-                                    wire:click="toggleColor('<?php echo e($color); ?>')"
+                                    wire:click="toggleColor('<?php echo e($colorName); ?>')"
+                                    title="<?php echo e($colorName); ?>"
                                     class="<?php echo \Illuminate\Support\Arr::toCssClasses([
-                                        'px-3 py-2 border rounded-lg transition-colors font-sans text-xs',
-                                        'border-primary bg-primary/10 text-primary' => in_array($color, $selectedColors, true),
-                                        'border-border hover:border-primary hover:bg-primary/5' => ! in_array($color, $selectedColors, true),
+                                        'flex items-center gap-1.5 px-2 py-1.5 border rounded-lg transition-colors font-sans text-xs',
+                                        'border-primary bg-primary/10 text-primary' => in_array($colorName, $selectedColors, true),
+                                        'border-border hover:border-primary hover:bg-primary/5' => ! in_array($colorName, $selectedColors, true),
                                     ]); ?>"
                                 >
-                                    <?php echo e($color); ?>
+                                    <span class="w-4 h-4 rounded-full border border-border/50 shrink-0" style="background-color: <?php echo e($color['hex_code']); ?>;"></span>
+                                    <?php echo e($colorName); ?>
 
                                 </button>
                             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::endLoop(); ?><?php endif; ?><?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::closeLoop(); ?><?php endif; ?>

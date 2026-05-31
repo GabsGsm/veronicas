@@ -2,13 +2,16 @@
 
 namespace App\Models;
 
+use Database\Factories\BannerFactory;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Storage;
 
 class Banner extends Model
 {
-    /** @use HasFactory<\Database\Factories\BannerFactory> */
+    /** @use HasFactory<BannerFactory> */
     use HasFactory;
 
     protected $fillable = [
@@ -16,7 +19,9 @@ class Banner extends Model
         'subtitle',
         'description',
         'image',
+        'image_position',
         'cta_label',
+        'hide_overlay',
         'collection_id',
         'active',
         'order',
@@ -26,6 +31,7 @@ class Banner extends Model
     {
         return [
             'active' => 'boolean',
+            'hide_overlay' => 'boolean',
             'order' => 'integer',
         ];
     }
@@ -34,5 +40,12 @@ class Banner extends Model
     public function collection(): BelongsTo
     {
         return $this->belongsTo(Collection::class);
+    }
+
+    protected function imageUrl(): Attribute
+    {
+        return Attribute::get(
+            fn (): ?string => $this->image ? Storage::disk('public')->url($this->image) : null
+        );
     }
 }

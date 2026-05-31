@@ -4,8 +4,11 @@ namespace App\Livewire\Admin\Pages\Products;
 
 use App\Models\Category;
 use App\Models\Collection;
+use App\Models\Color;
+use App\Models\Occasion;
 use App\Models\Product;
-use Illuminate\Support\Str;
+use App\Models\Size;
+use App\Models\Tag;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -94,11 +97,6 @@ class Edit extends Component
         $this->existingGallery = $product->gallery ?? [];
     }
 
-    public function updatedName(): void
-    {
-        $this->slug = Str::slug($this->name);
-    }
-
     public function removeExistingPrimaryImage(): void
     {
         $this->existingPrimaryImage = null;
@@ -181,8 +179,12 @@ class Edit extends Component
     public function render(): View
     {
         return view('livewire.admin.pages.products.edit', [
-            'categories' => Category::orderBy('name')->get(),
+            'categories' => Category::where('active', true)->orderBy('name')->get(),
             'collections' => Collection::orderBy('title')->get(),
+            'availableTags' => Tag::where('active', true)->orderBy('order')->get(),
+            'availableOccasions' => Occasion::where('active', true)->orderBy('order')->get(),
+            'availableSizes' => Size::where('active', true)->orderBy('order')->get(),
+            'availableColors' => Color::where('active', true)->orderBy('order')->get(),
         ]);
     }
 }

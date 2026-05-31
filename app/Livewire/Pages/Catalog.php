@@ -2,9 +2,11 @@
 
 namespace App\Livewire\Pages;
 
-use App\Enums\Occasion;
 use App\Livewire\Concerns\ManagesFavorites;
+use App\Models\Category;
+use App\Models\Occasion;
 use App\Models\Product;
+use App\Models\Tag;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
@@ -13,12 +15,13 @@ use Livewire\Component;
 use Livewire\WithPagination;
 
 /**
- * Catálogo unificado — substitui o CategoryPage do React e suporta as variantes:
- *  - destaques  → featured=true
- *  - nova       → tag='Nova Coleção'
- *  - categoria  → category slug
- *  - ocasião    → occasion = 'Festa' etc
- *  - promoções  → promotional_price_cents != null
+ * Catálogo unificado — suporta os modos:
+ *  - featured  → where('featured', true)
+ *  - new       → tag='Nova Coleção' (legado; mantido por compatibilidade)
+ *  - sale      → promotional_price_cents != null
+ *  - category  → category slug
+ *  - occasion  → occasion slug → resolves to name
+ *  - tag       → tag slug → resolves to name
  */
 #[Layout('components.layouts.app')]
 class Catalog extends Component
@@ -31,12 +34,12 @@ class Catalog extends Component
 
     public ?string $occasion = null;
 
+    public ?string $tag = null;
+
     /** @var array<string, mixed> */
     public array $activeFilters = [];
 
     /**
-     * Configuração visual da página (header + descrições).
-     *
      * @return array{decorative: string, title: string, subtitle: string}
      */
     protected function pageConfig(): array
@@ -57,31 +60,33 @@ class Catalog extends Component
                 'title' => 'Promoções',
                 'subtitle' => 'Elegância premium com preços irresistíveis',
             ],
-            $this->mode === 'occasion' && $this->occasion === Occasion::Festa->value => [
-                'decorative' => 'Para momentos especiais',
-                'title' => 'Festa',
-                'subtitle' => 'Brilhe em cada celebração',
-            ],
-            $this->mode === 'category' && $this->category === 'vestidos' => [
-                'decorative' => 'Elegância em cada detalhe',
-                'title' => 'Vestidos',
-                'subtitle' => 'Do casual ao festa, encontre o vestido perfeito',
-            ],
-            $this->mode === 'category' && $this->category === 'conjuntos' => [
-                'decorative' => 'Look completo',
-                'title' => 'Conjuntos',
-                'subtitle' => 'Combinações sofisticadas prontas para usar',
-            ],
-            $this->mode === 'category' && $this->category === 'casual' => [
-                'decorative' => 'Estilo do dia a dia',
-                'title' => 'Casual',
-                'subtitle' => 'Conforto e elegância para o cotidiano',
-            ],
-            $this->mode === 'category' && $this->category === 'acessorios' => [
-                'decorative' => 'Toques finais',
-                'title' => 'Acessórios',
-                'subtitle' => 'Complete seu look com elegância',
-            ],
+            $this->mode === 'category' && $this->category !== null => (function () {
+                $cat = Category::where('slug', $this->category)->first();
+
+                return [
+                    'decorative' => 'Categoria',
+                    'title' => $cat?->name ?? ucfirst(str_replace('-', ' ', $this->category)),
+                    'subtitle' => $cat?->description ?? 'Explore nossa seleção',
+                ];
+            })(),
+            $this->mode === 'occasion' && $this->occasion !== null => (function () {
+                $occ = Occasion::where('slug', $this->occasion)->first();
+
+                return [
+                    'decorative' => 'Ocasião',
+                    'title' => $occ?->name ?? ucfirst($this->occasion),
+                    'subtitle' => 'Peças selecionadas para cada momento',
+                ];
+            })(),
+            $this->mode === 'tag' && $this->tag !== null => (function () {
+                $tagModel = Tag::where('slug', $this->tag)->first();
+
+                return [
+                    'decorative' => 'Coleção',
+                    'title' => $tagModel?->name ?? ucfirst(str_replace('-', ' ', $this->tag)),
+                    'subtitle' => 'Produtos selecionados',
+                ];
+            })(),
             default => [
                 'decorative' => 'Catálogo',
                 'title' => 'Catálogo',
@@ -90,11 +95,16 @@ class Catalog extends Component
         };
     }
 
-    public function mount(string $mode, ?string $category = null, ?string $occasion = null): void
-    {
+    public function mount(
+        string $mode,
+        ?string $category = null,
+        ?string $occasion = null,
+        ?string $tag = null
+    ): void {
         $this->mode = $mode;
         $this->category = $category;
         $this->occasion = $occasion;
+        $this->tag = $tag;
     }
 
     /** @param  array<string, mixed>  $filters */
@@ -110,17 +120,26 @@ class Catalog extends Component
     {
         $query = Product::query()->with('category')->where('active', true);
 
-        // ---- modo base ----
         match ($this->mode) {
             'featured' => $query->where('featured', true),
             'new' => $query->where('tag', 'Nova Coleção'),
             'sale' => $query->whereNotNull('promotional_price_cents'),
             'category' => $query->whereHas('category', fn ($q) => $q->where('slug', $this->category)),
-            'occasion' => $query->where('occasion', $this->occasion),
+            'occasion' => (function () use ($query): void {
+                $occ = Occasion::where('slug', $this->occasion)->first();
+                if ($occ) {
+                    $query->where('occasion', $occ->name);
+                }
+            })(),
+            'tag' => (function () use ($query): void {
+                $tagModel = Tag::where('slug', $this->tag)->first();
+                if ($tagModel) {
+                    $query->where('tag', $tagModel->name);
+                }
+            })(),
             default => null,
         };
 
-        // ---- filtros adicionais (FilterPanel) ----
         $filters = $this->activeFilters;
 
         if (! empty($filters['sizes'])) {
@@ -144,7 +163,6 @@ class Catalog extends Component
         }
 
         if (! empty($filters['priceRange'])) {
-            // converte label "R$ 150 - R$ 300" em centavos
             if (preg_match_all('/(\d+)/', $filters['priceRange'], $matches)) {
                 $nums = $matches[1];
                 if (str_contains($filters['priceRange'], 'Até')) {

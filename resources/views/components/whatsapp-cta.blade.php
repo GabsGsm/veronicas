@@ -21,11 +21,11 @@
             let msg = @js("Olá! Tenho interesse no produto *{$productName}* ({$productPrice})");
             if (size) msg += ' - Tamanho: ' + size;
             if (color) msg += ' - Cor: ' + color;
-            msg += @js(" que vi no catálogo da Verônica's Fashion. 🌸");
+            msg += @js(" que vi no catálogo da Verônica's Fashion.");
             return @js('https://wa.me/'.$phone) + '?text=' + encodeURIComponent(msg);
         }
     }"
-    :href="buildUrl($parent.selectedSize ?? '', $parent.selectedColor ?? '')"
+    :href="buildUrl(selectedSize ?? '', selectedColor ?? '')"
     target="_blank"
     rel="noopener noreferrer"
     class="w-full bg-[#25D366] hover:bg-[#20BD5C] text-white py-4 px-6 rounded-full font-sans transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-3 group active:scale-[0.98]"

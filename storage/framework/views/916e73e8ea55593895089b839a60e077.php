@@ -1,3 +1,65 @@
+<?php $__env->startPush('meta'); ?>
+<?php
+    use Illuminate\Support\Facades\Storage;
+    use Illuminate\Support\Str;
+
+    $collectionUrl   = route('collection.show', $collection->slug);
+    $collectionImage = $collection->cover_image_url
+        ? url($collection->cover_image_url)
+        : ($collection->banner_image_url ? url($collection->banner_image_url) : asset('web-app-manifest-512x512.png'));
+
+    $metaTitle = $collection->title . " | Verônica's Fashion";
+    $metaDesc  = $collection->description
+        ?? $collection->subtitle
+        ?? "Explore a coleção {$collection->title} da Verônica's Fashion. Peças exclusivas de moda feminina premium.";
+
+    $collectionSchema = [
+        '@context'    => 'https://schema.org',
+        '@type'       => 'CollectionPage',
+        'name'        => $collection->title,
+        'description' => strip_tags($collection->description ?? $collection->subtitle ?? ''),
+        'url'         => $collectionUrl,
+        'image'       => $collectionImage,
+        'provider'    => [
+            '@type' => 'Organization',
+            'name'  => "Verônica's Fashion",
+            'url'   => route('home'),
+        ],
+    ];
+
+    $breadcrumbSchema = [
+        '@context'        => 'https://schema.org',
+        '@type'           => 'BreadcrumbList',
+        'itemListElement' => [
+            ['@type' => 'ListItem', 'position' => 1, 'name' => 'Início', 'item' => route('home')],
+            ['@type' => 'ListItem', 'position' => 2, 'name' => $collection->title, 'item' => $collectionUrl],
+        ],
+    ];
+?>
+<?php if (isset($component)) { $__componentOriginal42da61123f891e63201d7be28f403427 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal42da61123f891e63201d7be28f403427 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.seo','data' => ['title' => $metaTitle,'description' => $metaDesc,'image' => $collectionImage,'url' => $collectionUrl,'type' => 'website','jsonLd' => [$collectionSchema, $breadcrumbSchema]]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('seo'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($metaTitle),'description' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($metaDesc),'image' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($collectionImage),'url' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($collectionUrl),'type' => 'website','json-ld' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute([$collectionSchema, $breadcrumbSchema])]); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal42da61123f891e63201d7be28f403427)): ?>
+<?php $attributes = $__attributesOriginal42da61123f891e63201d7be28f403427; ?>
+<?php unset($__attributesOriginal42da61123f891e63201d7be28f403427); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal42da61123f891e63201d7be28f403427)): ?>
+<?php $component = $__componentOriginal42da61123f891e63201d7be28f403427; ?>
+<?php unset($__componentOriginal42da61123f891e63201d7be28f403427); ?>
+<?php endif; ?>
+<?php $__env->stopPush(); ?>
+
 <div class="max-w-7xl mx-auto">
     
     <?php if (isset($component)) { $__componentOriginal98178ee5c2506acd1a1bd6aac3021ac1 = $component; } ?>
@@ -75,14 +137,14 @@
     <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($collection->story): ?>
         <?php if (isset($component)) { $__componentOriginalf4a88f1b2c30d386ef9b8dde6be5ef51 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalf4a88f1b2c30d386ef9b8dde6be5ef51 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.editorial-banner','data' => ['story' => $collection->story,'image' => $collection->cover_image ? Storage::url($collection->cover_image) : null]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.editorial-banner','data' => ['story' => $collection->story,'image' => $collection->cover_image_url]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('editorial-banner'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['story' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($collection->story),'image' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($collection->cover_image ? Storage::url($collection->cover_image) : null)]); ?>
+<?php $component->withAttributes(['story' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($collection->story),'image' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($collection->cover_image_url)]); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>

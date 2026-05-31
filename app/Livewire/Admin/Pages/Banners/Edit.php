@@ -17,28 +17,43 @@ class Edit extends Component
     use WithFileUploads;
 
     public int $bannerId;
+
     public string $title = '';
+
     public string $subtitle = '';
+
     public string $description = '';
+
     public string $cta_label = '';
+
     public ?int $collection_id = null;
+
     public bool $active = true;
+
+    public bool $hide_overlay = false;
+
+    public string $image_position = 'center';
+
     public int $order = 0;
+
     public ?string $existingImage = null;
+
     public $newImage = null;
 
     public function mount(int $id): void
     {
-        $banner               = Banner::findOrFail($id);
-        $this->bannerId       = $banner->id;
-        $this->title          = $banner->title;
-        $this->subtitle       = $banner->subtitle ?? '';
-        $this->description    = $banner->description ?? '';
-        $this->cta_label      = $banner->cta_label ?? '';
-        $this->collection_id  = $banner->collection_id;
-        $this->active         = $banner->active;
-        $this->order          = $banner->order;
-        $this->existingImage  = $banner->image;
+        $banner = Banner::findOrFail($id);
+        $this->bannerId = $banner->id;
+        $this->title = $banner->title;
+        $this->subtitle = $banner->subtitle ?? '';
+        $this->description = $banner->description ?? '';
+        $this->cta_label = $banner->cta_label ?? '';
+        $this->collection_id = $banner->collection_id;
+        $this->active = $banner->active;
+        $this->hide_overlay = $banner->hide_overlay;
+        $this->image_position = $banner->image_position ?? 'center';
+        $this->order = $banner->order;
+        $this->existingImage = $banner->image;
     }
 
     public function removeExistingImage(): void
@@ -49,9 +64,9 @@ class Edit extends Component
     public function save(): void
     {
         $this->validate([
-            'title'         => 'required|string|max:255',
+            'title' => 'required|string|max:255',
             'collection_id' => 'nullable|exists:collections,id',
-            'newImage'      => 'nullable|image|max:2048',
+            'newImage' => 'nullable|image|max:2048',
         ]);
 
         $banner = Banner::findOrFail($this->bannerId);
@@ -62,14 +77,16 @@ class Edit extends Component
         }
 
         $banner->update([
-            'title'         => $this->title,
-            'subtitle'      => $this->subtitle ?: null,
-            'description'   => $this->description ?: null,
-            'cta_label'     => $this->cta_label ?: null,
+            'title' => $this->title,
+            'subtitle' => $this->subtitle ?: null,
+            'description' => $this->description ?: null,
+            'cta_label' => $this->cta_label ?: null,
+            'hide_overlay' => $this->hide_overlay,
+            'image_position' => $this->image_position,
             'collection_id' => $this->collection_id ?: null,
-            'active'        => $this->active,
-            'order'         => $this->order,
-            'image'         => $imagePath,
+            'active' => $this->active,
+            'order' => $this->order,
+            'image' => $imagePath,
         ]);
 
         $this->dispatch('toast', type: 'success', message: 'Banner atualizado com sucesso.');

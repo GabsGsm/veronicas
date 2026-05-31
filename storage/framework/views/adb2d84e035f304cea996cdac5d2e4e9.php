@@ -104,7 +104,7 @@ Banners <?php echo $__env->renderComponent(); ?>
                         <tr class="hover:bg-slate-50 transition-colors" <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::$currentLoop['key'] = 'banner-'.e($banner->id).''; ?>wire:key="banner-<?php echo e($banner->id); ?>">
                             <td class="px-4 py-3">
                                 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($banner->image): ?>
-                                    <img src="<?php echo e(Storage::url($banner->image)); ?>"
+                                    <img src="<?php echo e($banner->image_url); ?>"
                                          alt="<?php echo e($banner->title); ?>"
                                          class="w-10 h-10 rounded-lg object-cover">
                                 <?php else: ?>

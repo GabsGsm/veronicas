@@ -43,19 +43,18 @@ class Create extends Component
 
     public function updatedTitle(): void
     {
-        if ($this->slug === '') {
-            $this->slug = Str::slug($this->title);
-        }
+        $this->slug = Str::slug($this->title);
     }
 
     public function save(): void
     {
         $this->validate([
             'title' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:collections,slug',
             'coverImage' => 'nullable|image|max:2048',
             'bannerImage' => 'nullable|image|max:2048',
         ]);
+
+        $this->slug = $this->uniqueSlug($this->title);
 
         $coverPath = $this->coverImage ? $this->coverImage->store('collections', 'public') : null;
         $bannerPath = $this->bannerImage ? $this->bannerImage->store('collections', 'public') : null;
@@ -80,5 +79,22 @@ class Create extends Component
     public function render(): View
     {
         return view('livewire.admin.pages.collections.create');
+    }
+
+    private function uniqueSlug(string $title, ?int $ignoreId = null): string
+    {
+        $base = Str::slug($title);
+        $slug = $base;
+        $counter = 2;
+
+        while (
+            Collection::where('slug', $slug)
+                ->when($ignoreId, fn ($q) => $q->where('id', '!=', $ignoreId))
+                ->exists()
+        ) {
+            $slug = $base.'-'.$counter++;
+        }
+
+        return $slug;
     }
 }

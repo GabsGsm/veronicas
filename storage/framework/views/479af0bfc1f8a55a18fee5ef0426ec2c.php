@@ -1,17 +1,82 @@
+<?php $__env->startPush('meta'); ?>
+<?php
+    $organizationSchema = [
+        '@context'        => 'https://schema.org',
+        '@type'           => 'ClothingStore',
+        'name'            => "Verônica's Fashion",
+        'description'     => "Boutique feminina especializada em moda premium, com peças exclusivas e elegantes para todas as ocasiões.",
+        'url'             => route('home'),
+        'logo'            => asset('web-app-manifest-512x512.png'),
+        'image'           => asset('web-app-manifest-512x512.png'),
+        'telephone'       => config('veronica.contact.phone'),
+        'address'         => [
+            '@type'           => 'PostalAddress',
+            'streetAddress'   => config('veronica.contact.address'),
+            'addressCountry'  => 'BR',
+        ],
+        'contactPoint' => [
+            '@type'       => 'ContactPoint',
+            'contactType' => 'customer service',
+            'telephone'   => config('veronica.contact.phone'),
+            'availableLanguage' => 'Portuguese',
+        ],
+        'sameAs' => [
+            'https://www.instagram.com/' . config('veronica.social.instagram'),
+            'https://wa.me/' . config('veronica.whatsapp.number'),
+        ],
+    ];
+
+    $websiteSchema = [
+        '@context'        => 'https://schema.org',
+        '@type'           => 'WebSite',
+        'name'            => "Verônica's Fashion",
+        'url'             => route('home'),
+        'description'     => "Catálogo digital da Verônica's Fashion — boutique feminina premium.",
+        'potentialAction' => [
+            '@type'       => 'SearchAction',
+            'target'      => route('catalog.featured'),
+            'query-input' => 'required name=search_term_string',
+        ],
+    ];
+?>
+<?php if (isset($component)) { $__componentOriginal42da61123f891e63201d7be28f403427 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal42da61123f891e63201d7be28f403427 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.seo','data' => ['title' => 'Verônica\'s Fashion - Catálogo de Moda Feminina','description' => 'Descubra a elegância da Verônica\'s Fashion. Peças exclusivas de moda feminina premium: vestidos, conjuntos, acessórios e muito mais. Boutique feminina com atendimento personalizado.','url' => route('home'),'type' => 'website','jsonLd' => [$organizationSchema, $websiteSchema]]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('seo'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => 'Verônica\'s Fashion - Catálogo de Moda Feminina','description' => 'Descubra a elegância da Verônica\'s Fashion. Peças exclusivas de moda feminina premium: vestidos, conjuntos, acessórios e muito mais. Boutique feminina com atendimento personalizado.','url' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(route('home')),'type' => 'website','json-ld' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute([$organizationSchema, $websiteSchema])]); ?>
+<?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
+
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal42da61123f891e63201d7be28f403427)): ?>
+<?php $attributes = $__attributesOriginal42da61123f891e63201d7be28f403427; ?>
+<?php unset($__attributesOriginal42da61123f891e63201d7be28f403427); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal42da61123f891e63201d7be28f403427)): ?>
+<?php $component = $__componentOriginal42da61123f891e63201d7be28f403427; ?>
+<?php unset($__componentOriginal42da61123f891e63201d7be28f403427); ?>
+<?php endif; ?>
+<?php $__env->stopPush(); ?>
+
 <div>
     
     
     
     <?php if (isset($component)) { $__componentOriginalf8d4ea307ab1e58d4e472a43c8548d8e = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalf8d4ea307ab1e58d4e472a43c8548d8e = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.page-header','data' => ['title' => 'Catálogo Premium','subtitle' => 'Explore nossa seleção exclusiva']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.page-header','data' => ['title' => 'Catálogo','subtitle' => 'Explore nossa seleção exclusiva']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('page-header'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['title' => 'Catálogo Premium','subtitle' => 'Explore nossa seleção exclusiva']); ?>
+<?php $component->withAttributes(['title' => 'Catálogo','subtitle' => 'Explore nossa seleção exclusiva']); ?>
 <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::processComponentKey($component); ?>
 
 <?php echo $__env->renderComponent(); ?>
@@ -28,8 +93,9 @@
     
     
     
-    <div class="mb-16">
-        <?php if (isset($component)) { $__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5 = $component; } ?>
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($banners->isNotEmpty()): ?>
+        <div class="mb-16">
+            <?php if (isset($component)) { $__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal7c65c7b292d8ab163b5839aa2f2c30c5 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.hero-carousel','data' => ['banners' => $banners]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('hero-carousel'); ?>
@@ -51,7 +117,8 @@
 <?php $component = $__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5; ?>
 <?php unset($__componentOriginal7c65c7b292d8ab163b5839aa2f2c30c5); ?>
 <?php endif; ?>
-    </div>
+        </div>
+    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 
     
     

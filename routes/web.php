@@ -1,10 +1,19 @@
 <?php
 
+use App\Http\Controllers\Admin\ClearCacheController;
+use App\Http\Controllers\FileController;
+use App\Http\Controllers\SitemapController;
 use App\Livewire\Admin\Pages\Banners;
+use App\Livewire\Admin\Pages\Categories;
 use App\Livewire\Admin\Pages\Collections;
+use App\Livewire\Admin\Pages\Colors;
 use App\Livewire\Admin\Pages\Dashboard;
 use App\Livewire\Admin\Pages\Login;
+use App\Livewire\Admin\Pages\Navigation;
+use App\Livewire\Admin\Pages\Occasions;
 use App\Livewire\Admin\Pages\Products;
+use App\Livewire\Admin\Pages\Sizes;
+use App\Livewire\Admin\Pages\Tags;
 use App\Livewire\Admin\Pages\Users;
 use App\Livewire\Pages\Catalog;
 use App\Livewire\Pages\CollectionShow;
@@ -13,7 +22,6 @@ use App\Livewire\Pages\Favorites;
 use App\Livewire\Pages\Home;
 use App\Livewire\Pages\ProductDetail;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,11 +29,9 @@ use Illuminate\Support\Facades\Storage;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/storage/{path}', function (string $path) {
-    abort_unless(Storage::disk('public')->exists($path), 404);
-
-    return Storage::disk('public')->response($path);
-})->where('path', '.*')->name('storage.serve');
+Route::get('/storage/{path}', [FileController::class, 'serve'])
+    ->where('path', '.*')
+    ->name('storage.serve');
 
 /*
 |--------------------------------------------------------------------------
@@ -71,6 +77,11 @@ Route::get('/ocasiao/{occasion}', Catalog::class)
     ->defaults('mode', 'occasion')
     ->name('catalog.occasion');
 
+Route::get('/tag/{tag}', Catalog::class)
+    ->defaults('mode', 'tag')
+    ->where('tag', '[a-z0-9-]+')
+    ->name('catalog.tag');
+
 // ---- Detalhes ----
 Route::get('/produto/{slug}', ProductDetail::class)
     ->where('slug', '[a-z0-9-]+')
@@ -83,6 +94,9 @@ Route::get('/colecao/{slug}', CollectionShow::class)
 // ---- Páginas auxiliares ----
 Route::get('/favoritos', Favorites::class)->name('favorites');
 Route::get('/contato', Contact::class)->name('contact');
+
+// ---- SEO ----
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
 /*
 |--------------------------------------------------------------------------
@@ -119,9 +133,42 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/colecoes/novo', Collections\Create::class)->name('collections.create');
         Route::get('/colecoes/{id}', Collections\Edit::class)->name('collections.edit');
 
+        // Menu de Navegação
+        Route::get('/navegacao', Navigation\Index::class)->name('navigation.index');
+        Route::get('/navegacao/novo', Navigation\Create::class)->name('navigation.create');
+        Route::get('/navegacao/{id}', Navigation\Edit::class)->name('navigation.edit');
+
+        // Categorias
+        Route::get('/categorias', Categories\Index::class)->name('categories.index');
+        Route::get('/categorias/nova', Categories\Create::class)->name('categories.create');
+        Route::get('/categorias/{id}', Categories\Edit::class)->name('categories.edit');
+
+        // Tags
+        Route::get('/tags', Tags\Index::class)->name('tags.index');
+        Route::get('/tags/nova', Tags\Create::class)->name('tags.create');
+        Route::get('/tags/{id}', Tags\Edit::class)->name('tags.edit');
+
+        // Ocasiões
+        Route::get('/ocasioes', Occasions\Index::class)->name('occasions.index');
+        Route::get('/ocasioes/nova', Occasions\Create::class)->name('occasions.create');
+        Route::get('/ocasioes/{id}', Occasions\Edit::class)->name('occasions.edit');
+
+        // Tamanhos
+        Route::get('/tamanhos', Sizes\Index::class)->name('sizes.index');
+        Route::get('/tamanhos/novo', Sizes\Create::class)->name('sizes.create');
+        Route::get('/tamanhos/{id}', Sizes\Edit::class)->name('sizes.edit');
+
+        // Cores
+        Route::get('/cores', Colors\Index::class)->name('colors.index');
+        Route::get('/cores/nova', Colors\Create::class)->name('colors.create');
+        Route::get('/cores/{id}', Colors\Edit::class)->name('colors.edit');
+
         // Usuários
         Route::get('/usuarios', Users\Index::class)->name('users.index');
         Route::get('/usuarios/novo', Users\Create::class)->name('users.create');
         Route::get('/usuarios/{id}', Users\Edit::class)->name('users.edit');
+
+        // Utilitários
+        Route::post('/clear-cache', ClearCacheController::class)->name('clear-cache');
     });
 });

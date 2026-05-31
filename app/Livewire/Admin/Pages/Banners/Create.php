@@ -28,6 +28,10 @@ class Create extends Component
 
     public bool $active = true;
 
+    public bool $hide_overlay = false;
+
+    public string $image_position = 'center';
+
     public int $order = 0;
 
     public $image = null;
@@ -54,6 +58,8 @@ class Create extends Component
             'subtitle' => $this->subtitle ?: null,
             'description' => $this->description ?: null,
             'cta_label' => $this->cta_label ?: null,
+            'hide_overlay' => $this->hide_overlay,
+            'image_position' => $this->image_position,
             'collection_id' => $this->collection_id ?: null,
             'active' => $this->active,
             'order' => $this->order,

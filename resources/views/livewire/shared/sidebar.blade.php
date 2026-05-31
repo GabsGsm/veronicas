@@ -25,11 +25,8 @@
     <nav class="flex-1 overflow-y-auto py-4 scrollbar-thin">
         @foreach ($menuItems as $item)
             @php
-                $params = $item['params'] ?? [];
-                $href = route($item['route'], $params);
-                $isActive = request()->routeIs($item['route']) && collect($params)->every(
-                    fn ($v, $k) => request()->route($k) === $v
-                );
+                $href = $item->url();
+                $isActive = request()->url() === $href || request()->fullUrl() === $href;
             @endphp
 
             <a
@@ -40,8 +37,10 @@
                         ? 'bg-sidebar-accent text-sidebar-accent-foreground border-l-4 border-primary'
                         : 'text-sidebar-foreground hover:bg-sidebar-accent/50 border-l-4 border-transparent' }}"
             >
-                <x-icon :name="$item['icon']" class="w-5 h-5 flex-shrink-0" />
-                <span class="font-sans text-sm">{{ $item['label'] }}</span>
+                @if ($item->icon)
+                    <x-icon :name="$item->icon" class="w-5 h-5 shrink-0" />
+                @endif
+                <span class="font-sans text-sm">{{ $item->label }}</span>
             </a>
         @endforeach
     </nav>

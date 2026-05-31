@@ -48,7 +48,7 @@
                         <tr class="hover:bg-slate-50 transition-colors" wire:key="collection-{{ $collection->id }}">
                             <td class="px-4 py-3">
                                 @if ($collection->cover_image)
-                                    <img src="{{ Storage::url($collection->cover_image) }}"
+                                    <img src="{{ $collection->cover_image_url }}"
                                          alt="{{ $collection->title }}"
                                          class="w-10 h-10 rounded-lg object-cover">
                                 @else

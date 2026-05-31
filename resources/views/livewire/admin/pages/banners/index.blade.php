@@ -48,7 +48,7 @@
                         <tr class="hover:bg-slate-50 transition-colors" wire:key="banner-{{ $banner->id }}">
                             <td class="px-4 py-3">
                                 @if ($banner->image)
-                                    <img src="{{ Storage::url($banner->image) }}"
+                                    <img src="{{ $banner->image_url }}"
                                          alt="{{ $banner->title }}"
                                          class="w-10 h-10 rounded-lg object-cover">
                                 @else

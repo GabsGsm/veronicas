@@ -4,7 +4,11 @@ namespace App\Livewire\Admin\Pages\Products;
 
 use App\Models\Category;
 use App\Models\Collection;
+use App\Models\Color;
+use App\Models\Occasion;
 use App\Models\Product;
+use App\Models\Size;
+use App\Models\Tag;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
@@ -67,9 +71,7 @@ class Create extends Component
 
     public function updatedName(): void
     {
-        if ($this->slug === '') {
-            $this->slug = Str::slug($this->name);
-        }
+        $this->slug = Str::slug($this->name);
     }
 
     public function addCareItem(): void
@@ -94,13 +96,14 @@ class Create extends Component
     {
         $this->validate([
             'name' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:products,slug',
             'category_id' => 'required|exists:categories,id',
             'price' => 'required|numeric|min:0',
             'promotional_price' => 'nullable|numeric|min:0',
             'primaryImage' => 'nullable|image|max:2048',
             'galleryImages.*' => 'nullable|image|max:2048',
         ]);
+
+        $this->slug = $this->uniqueSlug($this->name);
 
         $primaryPath = $this->primaryImage
             ? $this->primaryImage->store('products', 'public')
@@ -141,8 +144,29 @@ class Create extends Component
     public function render(): View
     {
         return view('livewire.admin.pages.products.create', [
-            'categories' => Category::orderBy('name')->get(),
+            'categories' => Category::where('active', true)->orderBy('name')->get(),
             'collections' => Collection::orderBy('title')->get(),
+            'availableTags' => Tag::where('active', true)->orderBy('order')->get(),
+            'availableOccasions' => Occasion::where('active', true)->orderBy('order')->get(),
+            'availableSizes' => Size::where('active', true)->orderBy('order')->get(),
+            'availableColors' => Color::where('active', true)->orderBy('order')->get(),
         ]);
+    }
+
+    private function uniqueSlug(string $name, ?int $ignoreId = null): string
+    {
+        $base = Str::slug($name);
+        $slug = $base;
+        $counter = 2;
+
+        while (
+            Product::where('slug', $slug)
+                ->when($ignoreId, fn ($q) => $q->where('id', '!=', $ignoreId))
+                ->exists()
+        ) {
+            $slug = $base.'-'.$counter++;
+        }
+
+        return $slug;
     }
 }

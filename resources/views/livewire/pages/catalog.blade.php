@@ -1,3 +1,16 @@
+@push('meta')
+@php
+    $metaTitle = ($config['title'] ?? 'Catalogo') . " | Veronica's Fashion";
+    $metaDescription = ($config['subtitle'] ?? 'Moda feminina premium') . " Descubra pecas exclusivas de moda feminina premium na Veronica's Fashion.";
+@endphp
+<x-seo
+    title="{{ $metaTitle }}"
+    description="{{ $metaDescription }}"
+    url="{{ url()->current() }}"
+    type="website"
+/>
+@endpush
+
 <div>
     {{-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --}}
     {{-- Top bar com filtros (desktop)                                       --}}

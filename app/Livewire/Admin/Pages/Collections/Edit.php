@@ -3,7 +3,6 @@
 namespace App\Livewire\Admin\Pages\Collections;
 
 use App\Models\Collection;
-use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -41,11 +40,6 @@ class Edit extends Component
     public $newCoverImage = null;
 
     public $newBannerImage = null;
-
-    public function updatedTitle(): void
-    {
-        $this->slug = Str::slug($this->title);
-    }
 
     public function mount(int $id): void
     {

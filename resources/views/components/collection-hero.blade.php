@@ -8,7 +8,7 @@
 
 <div class="relative h-[500px] md:h-[600px] rounded-3xl overflow-hidden bg-card shadow-premium mb-16">
     {{-- Background --}}
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ $collection->banner_image ? Storage::url($collection->banner_image) : '' }}')">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ $collection->banner_image_url ?? '' }}')">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
     </div>
 

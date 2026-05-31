@@ -11,7 +11,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 #[Layout('components.layouts.app')]
-#[Title("Verônica's Fashion — Catálogo Premium")]
+#[Title("Verônica's Fashion")]
 class Home extends Component
 {
     use ManagesFavorites;

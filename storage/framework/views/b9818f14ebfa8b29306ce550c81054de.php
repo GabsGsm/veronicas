@@ -104,7 +104,7 @@ Coleções <?php echo $__env->renderComponent(); ?>
                         <tr class="hover:bg-slate-50 transition-colors" <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::$currentLoop['key'] = 'collection-'.e($collection->id).''; ?>wire:key="collection-<?php echo e($collection->id); ?>">
                             <td class="px-4 py-3">
                                 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($collection->cover_image): ?>
-                                    <img src="<?php echo e(Storage::url($collection->cover_image)); ?>"
+                                    <img src="<?php echo e($collection->cover_image_url); ?>"
                                          alt="<?php echo e($collection->title); ?>"
                                          class="w-10 h-10 rounded-lg object-cover">
                                 <?php else: ?>

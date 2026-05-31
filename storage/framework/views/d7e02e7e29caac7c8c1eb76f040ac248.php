@@ -105,7 +105,7 @@ Produtos <?php echo $__env->renderComponent(); ?>
                         <tr class="hover:bg-slate-50 transition-colors" <?php \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::$currentLoop['key'] = 'product-'.e($product->id).''; ?>wire:key="product-<?php echo e($product->id); ?>">
                             <td class="px-4 py-3">
                                 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($product->primary_image): ?>
-                                    <img src="<?php echo e(Storage::url($product->primary_image)); ?>"
+                                    <img src="<?php echo e(Storage::disk('public')->url($product->primary_image)); ?>"
                                          alt="<?php echo e($product->name); ?>"
                                          class="w-10 h-10 rounded-lg object-cover">
                                 <?php else: ?>

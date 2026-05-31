@@ -46,12 +46,37 @@
                     <flux:label>Ordem</flux:label>
                     <flux:input type="number" wire:model="order" min="0" />
                 </flux:field>
+
+                <flux:field>
+                    <flux:label>Ponto Focal da Imagem</flux:label>
+                    <flux:select wire:model="image_position">
+                        <option value="center">Centro (padrão)</option>
+                        <option value="top">Topo</option>
+                        <option value="bottom">Base</option>
+                        <option value="left">Esquerda</option>
+                        <option value="right">Direita</option>
+                        <option value="top left">Topo Esquerdo</option>
+                        <option value="top right">Topo Direito</option>
+                        <option value="bottom left">Base Esquerda</option>
+                        <option value="bottom right">Base Direita</option>
+                    </flux:select>
+                    <flux:description>Define qual parte da imagem fica visível quando cortada pela tela.</flux:description>
+                </flux:field>
             </div>
 
-            <label class="flex items-center gap-2 cursor-pointer">
-                <flux:checkbox wire:model="active" />
-                <span class="text-sm font-sans text-slate-700">Ativo</span>
-            </label>
+            <div class="flex flex-col gap-3 pt-2">
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <flux:checkbox wire:model="active" />
+                    <span class="text-sm font-sans text-slate-700">Ativo</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <flux:checkbox wire:model="hide_overlay" />
+                    <span class="text-sm font-sans text-slate-700">Ocultar sobreposição de texto</span>
+                </label>
+                <p class="text-xs text-slate-400 font-sans -mt-1 ml-6">
+                    Quando ativado, o título, subtítulo e botão ficam ocultos. A imagem do banner ocupa o slide inteiro e, se houver coleção vinculada, o slide inteiro vira um link clicável.
+                </p>
+            </div>
         </div>
 
         {{-- Imagem --}}

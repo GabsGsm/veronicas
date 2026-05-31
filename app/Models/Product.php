@@ -104,7 +104,7 @@ class Product extends Model
                 ? [$this->primary_image]
                 : $gallery;
 
-            return array_map(fn (string $p) => Storage::url($p), $paths);
+            return array_map(fn (string $p) => Storage::disk('public')->url($p), $paths);
         });
     }
 

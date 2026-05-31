@@ -2,10 +2,12 @@
     <x-hero-carousel :banners="$banners" />
 
     Carrossel hero cinematográfico em Alpine.js. Replica fielmente o React:
-      - 3 slides com fade
+      - slides com fade
       - autoplay 6s
       - controles laterais
       - indicadores na base
+      - <img> com object-cover + object-position dinâmico (sem background-image CSS)
+      - aspect-ratio responsivo: 3/2 mobile → 16/9 sm → 21/9 lg
 --}}
 @props(['banners'])
 
@@ -15,7 +17,9 @@
         'title' => $b->title,
         'subtitle' => $b->subtitle,
         'description' => $b->description,
-        'image' => $b->image ? \Illuminate\Support\Facades\Storage::url($b->image) : null,
+        'image' => $b->image_url,
+        'image_position' => $b->image_position ?? 'center',
+        'hide_overlay' => $b->hide_overlay,
         'cta_label' => $b->cta_label ?? 'Explorar Coleção',
         'href' => $b->collection_id ? route('collection.show', $b->collection->slug) : null,
     ])->values()->all();
@@ -35,7 +39,7 @@
     x-init="start()"
     @mouseenter="clearInterval(timer)"
     @mouseleave="restart()"
-    class="relative h-[420px] md:h-[500px] rounded-2xl overflow-hidden bg-card shadow-premium"
+    class="relative min-h-64 aspect-[3/2] sm:aspect-video lg:aspect-[21/9] max-h-[620px] rounded-2xl overflow-hidden bg-card shadow-premium"
 >
     {{-- Slides --}}
     <template x-for="(slide, index) in slides" :key="slide.id">
@@ -50,29 +54,46 @@
             x-transition:leave-end="opacity-0"
             style="display: none;"
         >
-            {{-- Imagem de fundo --}}
-            <div class="absolute inset-0 bg-cover bg-center" :style="`background-image: url(${slide.image})`">
-                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
-            </div>
+            {{-- Imagem principal --}}
+            <img
+                :src="slide.image"
+                :alt="slide.title"
+                class="absolute inset-0 w-full h-full object-cover"
+                :style="`object-position: ${slide.image_position || 'center'}`"
+                loading="lazy"
+            >
 
-            {{-- Conteúdo --}}
-            <div class="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-16 text-white max-w-2xl">
-                <p class="font-script text-2xl md:text-3xl mb-2 animate-fade-in-up" x-text="slide.subtitle"></p>
-                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight animate-fade-in-up" x-text="slide.title"></h2>
-                <p class="font-sans text-base sm:text-lg mb-6 max-w-md animate-fade-in-up" x-text="slide.description"></p>
+            {{-- Gradiente de overlay (oculto quando hide_overlay) --}}
+            <div
+                class="absolute inset-0 bg-linear-to-r from-black/60 via-black/40 to-transparent"
+                x-show="!slide.hide_overlay"
+            ></div>
 
-                <template x-if="slide.href">
-                    <a
-                        :href="slide.href"
-                        wire:navigate
-                        class="bg-primary hover:bg-rose-600 text-white px-8 py-3 rounded-full font-sans text-sm w-fit transition-all shadow-md hover:shadow-lg animate-fade-in-up"
-                        x-text="slide.cta_label"
-                    ></a>
-                </template>
-                <template x-if="!slide.href">
-                    <span class="bg-primary text-white px-8 py-3 rounded-full font-sans text-sm w-fit shadow-md" x-text="slide.cta_label"></span>
-                </template>
-            </div>
+            {{-- Conteúdo de texto (apenas quando hide_overlay é false) --}}
+            <template x-if="!slide.hide_overlay">
+                <div class="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-16 text-white max-w-2xl">
+                    <p class="font-script text-2xl md:text-3xl mb-2 animate-fade-in-up" x-text="slide.subtitle"></p>
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight animate-fade-in-up" x-text="slide.title"></h2>
+                    <p class="font-sans text-base sm:text-lg mb-6 max-w-md animate-fade-in-up" x-text="slide.description"></p>
+
+                    <template x-if="slide.href">
+                        <a
+                            :href="slide.href"
+                            wire:navigate
+                            class="bg-primary hover:bg-rose-600 text-white px-8 py-3 rounded-full font-sans text-sm w-fit transition-all shadow-md hover:shadow-lg animate-fade-in-up"
+                            x-text="slide.cta_label"
+                        ></a>
+                    </template>
+                    <template x-if="!slide.href">
+                        <span class="bg-primary text-white px-8 py-3 rounded-full font-sans text-sm w-fit shadow-md" x-text="slide.cta_label"></span>
+                    </template>
+                </div>
+            </template>
+
+            {{-- Link full-slide (apenas quando hide_overlay é true e há href) --}}
+            <template x-if="slide.hide_overlay && slide.href">
+                <a :href="slide.href" wire:navigate class="absolute inset-0 z-10" :aria-label="slide.title"></a>
+            </template>
         </div>
     </template>
 

@@ -2,7 +2,9 @@
 
 namespace App\Livewire\Shared;
 
-use App\Enums\Occasion;
+use App\Models\Color;
+use App\Models\Occasion;
+use App\Models\Size;
 use Livewire\Attributes\On;
 use Livewire\Component;
 
@@ -21,22 +23,36 @@ class FilterPanel extends Component
 
     public ?string $selectedPriceRange = null;
 
-    /** @var array{sizes: array<int, string>, colors: array<int, string>, occasions: array<int, string>, priceRanges: array<int, array{label: string, min: int, max: int}>} */
+    /** @var array<string, mixed> */
     public array $filterOptions = [
-        'sizes' => ['PP', 'P', 'M', 'G', 'GG'],
-        'colors' => ['Rosé', 'Nude', 'Off-white', 'Bege', 'Branco', 'Champagne', 'Dourado'],
+        'sizes' => [],
+        'colors' => [],
         'occasions' => [],
         'priceRanges' => [
-            ['label' => 'Até R$ 150',         'min' => 0,   'max' => 150],
-            ['label' => 'R$ 150 - R$ 300',    'min' => 150, 'max' => 300],
-            ['label' => 'R$ 300 - R$ 450',    'min' => 300, 'max' => 450],
-            ['label' => 'Acima de R$ 450',    'min' => 450, 'max' => 9999],
+            ['label' => 'Até R$ 150',       'min' => 0,   'max' => 150],
+            ['label' => 'R$ 150 - R$ 300',  'min' => 150, 'max' => 300],
+            ['label' => 'R$ 300 - R$ 450',  'min' => 300, 'max' => 450],
+            ['label' => 'Acima de R$ 450',  'min' => 450, 'max' => 9999],
         ],
     ];
 
     public function mount(): void
     {
-        $this->filterOptions['occasions'] = array_column(Occasion::cases(), 'value');
+        $this->filterOptions['sizes'] = Size::where('active', true)
+            ->orderBy('order')
+            ->pluck('label')
+            ->all();
+
+        $this->filterOptions['occasions'] = Occasion::where('active', true)
+            ->orderBy('order')
+            ->pluck('name')
+            ->all();
+
+        $this->filterOptions['colors'] = Color::where('active', true)
+            ->orderBy('order')
+            ->select('name', 'hex_code')
+            ->get()
+            ->toArray();
     }
 
     #[On('open-filters')]

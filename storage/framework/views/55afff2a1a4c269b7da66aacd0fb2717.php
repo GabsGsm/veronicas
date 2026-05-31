@@ -50,7 +50,7 @@ unset($__defined_vars, $__key, $__value); ?>
             wire:navigate
         >
             <img
-                src="<?php echo e($product->primary_image ? Storage::url($product->primary_image) : ''); ?>"
+                src="<?php echo e($product->primary_image ? Storage::disk('public')->url($product->primary_image) : ''); ?>"
                 alt="<?php echo e($product->name); ?>"
                 loading="lazy"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
